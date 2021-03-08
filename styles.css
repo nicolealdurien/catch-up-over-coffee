@@ -71,8 +71,9 @@ a:hover {
 
 /* super-light div styling for subpages - just adds a tiny bit of padding. The rest of the CSS styling for the sub-pages will be done in separate files. */
 .content-wrapper {
-  padding: 10px;
+  padding: 20px;
 }
+
 
 /* cards styles for front page*/
 .cards {

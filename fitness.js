@@ -5,19 +5,19 @@ const photoDIV = document.getElementById("photoDIV");
 // getInfoBtn.addEventListener("click", () => {
 //   console.log(excercises);
 
-for (let index = 0; index < excercises.length; index++) {
-  let excercise = excercises[index];
+for (let index = 0; index < exercises.length; index++) {
+  let exercise = exercises[index];
 
-  const excerciseItem = ` <div>
-                            <h1> ${excercise.id}. ${excercise.english_name} Pose</h1>
-                            <h2>  Sanskrit: ${excercise.sanskrit_name}</h2>
-                            <img src="${excercise.img_url}"width="150" height="150" class="excerciseImage"></img>
+  const exerciseItem = ` <div>
+                            <h1> ${exercise.id}. ${exercise.english_name} Pose</h1>
+                            <h2>  Sanskrit: ${exercise.sanskrit_name}</h2>
+                            <img src="${exercise.img_url}"width="150" height="150" class="exerciseImage"></img>
                             <p><i>Description</i></p>
                             </div>
 
                                 `;
 
-  photoDIV.insertAdjacentHTML("beforeend", excerciseItem);
+  photoDIV.insertAdjacentHTML("beforeend", exerciseItem);
 }
 // // });
 

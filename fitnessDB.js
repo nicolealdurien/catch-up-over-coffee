@@ -1,4 +1,4 @@
-let excercises = [
+let exercises = [
   {
     id: 1,
     sanskrit_name: "Navasana",
