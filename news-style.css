@@ -1,0 +1,32 @@
+
+
+.news-link:link {
+    background-color: white;
+    color: blue;
+}
+
+.news-link:visited {
+    background-color: white;
+    color: purple;
+}
+
+.button {
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    margin: .5rem;
+  }
+  
+.button:hover {
+    opacity: .6;
+  }
+  
+
+li { 
+    list-style-type: none;
+}
