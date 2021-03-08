@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
 
 body {
-    margin: 0;;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,7 +71,7 @@ a:hover {
 
 /* super-light div styling for subpages - just adds a tiny bit of padding.*/
 .content-wrapper {
-  padding: 20px;
+  padding: 20px
 }
 
 

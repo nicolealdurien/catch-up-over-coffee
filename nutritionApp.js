@@ -1,38 +1,19 @@
-let nutritionFactsUL = document.getElementById("nutritionFacts")
-
-let displayNutritionFactsBtn = document.getElementById("displayNutritionFactsBtn")
-
-displayNutritionFactsBtn.addEventListener("click" , function(){
-    displayFacts(nutritionFacts)
-})
+let nutritionFactsUL = document.getElementById("nutritionFactsUL")
 
 
-
-function displayFacts (nutritionFacts){
-    
-    for(let index= 0; index < nutritionFacts.length; index++) {
-    let nutrition = nutritionFacts[index]
-
-    const nutritionItems = `
-                        <li id="nutrition-Items>
-                           ${nutrition.one}
-                           ${nutrition.two}
-                           ${nutrition.three}
-                           ${nutrition.four}
-                           ${nutrition.five}
-                           ${nutrition.six}
-                           ${nutrition.seven}
-                           ${nutrition.eight}
-                           ${nutrition.nine}
-                           ${nutrition.ten}
-                           ${nutrition.eleven}
-                        </li>
-          
-    
-    `
-                nutritionFactsUL.innerHTML = nutritionItems
-
+// Display nutrition facts on page load.
+function displayNutrition() {
+for (let index= 0; index < nutritionFacts.length; index++) {
+        let nutrition = nutritionFacts[index]
+        console.log(nutrition.fact)
+        const nutritionItem = `
+                                <li id="nutritionItems">
+                                <img src="${nutrition.image}" width="200px" height="200px" /><br><br>
+                                <b>Fact:</b>  <i>${nutrition.fact}</i><br><br>
+                                </li>
+                                `
+    nutritionFactsUL.insertAdjacentHTML('beforeend', nutritionItem)
     }
 }
 
-displayFacts(nutritionFacts)
+displayNutrition()
