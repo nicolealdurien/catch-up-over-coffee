@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles/weather.css">
 </head>
-
+<body>
 <main class="wrapper">
     <section class="header">
       <h1>Weather</h1>
@@ -29,9 +29,16 @@
 
     <div class="content-wrapper">
         
-      All body stuff goes here. Not sure the card format from the front page will be that helpful on the sub-pages. You'll probably want more space than it provides. But it's in the commented-out HTML below if you want it.
+            <h3 id="weatherTitle">Get Weather For Today </h3>
+            <img id="image" src="image assests/images.png">
+            <br>
+            <input type="text" onfocus="this.value=''" id="getWeatherTextBox" placeholder="Enter Zipcode">
+            <button id="zipcodeCityWeatherBtn">Search</button>
+            <ul id="displayWeather"></ul>
+             
+           
 
-  </div>
+    </div>
 
   
     <!-- <section class="cards" id="cards">
@@ -57,6 +64,8 @@
 <!-- *** JS below here ***  -->
 <script src="scripts/weather.js"></script>
 <script src="scripts/main.js"></script>
+<script src="basic-Weather.js"></script>
 
 </body>
 </html>
+
