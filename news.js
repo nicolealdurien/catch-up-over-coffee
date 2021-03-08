@@ -14,6 +14,7 @@ fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b
         console.log(error);
     });
 }   
+
 getNews()
 
 

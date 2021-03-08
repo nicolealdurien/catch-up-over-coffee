@@ -69,7 +69,7 @@ a:hover {
   margin-top: .75rem;
 }
 
-/* super-light div styling for subpages - just adds a tiny bit of padding. The rest of the CSS styling for the sub-pages will be done in separate files. */
+/* super-light div styling for subpages - just adds a tiny bit of padding.*/
 .content-wrapper {
   padding: 20px;
 }
@@ -137,4 +137,36 @@ footer {
   text-align: center;
   font-size: .75rem;
   min-width: 350px;
+}
+
+/* Styling for News Page*/
+.news-link:link {
+  background-color: white;
+  color: blue;
+}
+
+.news-link:visited {
+  background-color: white;
+  color: purple;
+}
+
+.button {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.button:hover {
+  opacity: .6;
+}
+
+
+li { 
+  list-style-type: none;
 }
