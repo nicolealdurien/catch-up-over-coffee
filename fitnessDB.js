@@ -5,9 +5,7 @@ let exercises = [
     english_name: "Boat",
     img_url:
       "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
-    user_id: 1,
-    created_at: "2016-01-14T22:23:39.902Z",
-    updated_at: "2016-01-14T22:23:39.902Z",
+    description: ""
   },
   {
     id: 2,
