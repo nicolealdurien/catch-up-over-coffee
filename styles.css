@@ -34,10 +34,10 @@ a:hover {
   opacity: .6;
 }
 
-/* Styles for the hero image */
+/* header styles */
 .header {
   /* Photo by Patryk Gauza on unsplash.com */
-  background: url('beans.jpg') center;
+  background: url('images/beans.jpg') center;
   background-size: cover;
   padding: 4rem 2rem;
   /* grid styles */
@@ -69,7 +69,12 @@ a:hover {
   margin-top: .75rem;
 }
 
-/* cards styles */
+/* super-light div styling for subpages - just adds a tiny bit of padding. The rest of the CSS styling for the sub-pages will be done in separate files. */
+.content-wrapper {
+  padding: 10px;
+}
+
+/* cards styles for front page*/
 .cards {
   padding: .5rem;
 }
@@ -123,7 +128,7 @@ a:hover {
   margin: .5rem;
 }
 
-/* footer */
+/*footer*/
 footer {
   background-color: #333;
   padding: .75rem;
