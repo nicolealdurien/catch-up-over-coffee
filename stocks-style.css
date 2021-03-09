@@ -1,16 +1,66 @@
 .headerstockdisplay {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     color: white;
     background: black;
 }
 
 .bannerquotesbox {
-    margin-left: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: auto;
+    width: auto;
+    color: white;
+    background: black;
+    margin: 22px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bannerquotesboxcompanysymbol {
+    font-size: 40px;
+    letter-spacing: 2px;
+    height: 45px;
+    width: 450px;
+    color: white;
+    background: blueviolet;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.quotesbox {
     font-size: 20px;
     letter-spacing: 2px;
-    border: 1px solid white;
     height: 35px;
-    width: auto;
-    padding: 2px;
+    width: 450px;
+    color: white;
+    background: black;
+    margin-left: 10px;
+}
+
+button {
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+#stocksdisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-items: space-evenly;
+}
+
+#displaycomapnydetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

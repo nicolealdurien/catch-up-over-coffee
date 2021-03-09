@@ -1,6 +1,9 @@
 let stocks = []
 let stocksymboltextbox = document.getElementById("stocksymboltextbox");
 let btnsubmit = document.getElementById("btnsubmit");
+let companynametextbox = document.getElementById("companynametextbox");
+let searchbtn = document.getElementById("searchbtn");
+let displaycomapnydetail = document.getElementById("displaycomapnydetail")
 
 // showing  fixed no. companies quotes in  scrooling right to left
 
@@ -177,15 +180,30 @@ let intervalId5 = window.setInterval(function() {
 
 
 
+// GET THE SYMBOL FOR THE COMPANY ENTERED BY THE USER
+
+searchbtn.addEventListener("click", function() {
+    searchsymbol()
+
+})
 
 
+function searchsymbol() {
+    let companyname = companynametextbox.value;
+    fetch(`https://finnhub.io/api/v1/search?q=${companyname}&token=c135c0n48v6rj20a8qpg`)
+        .then((response) => {
+            return response.json()
+        }).then((json) => {
+            symboldiv = `
+                <div>
+               <div class="quotesbox"> Name of company : ${json.result[0].description}</div>
+               <div class="quotesbox"> symbol of company: ${json.result[0].symbol} </div>
+               </div>
+               `
+            symboldisplay.innerHTML = symboldiv
+        })
 
-
-
-
-
-
-
+}
 
 // GET THE QUOTES FROM API FOR ENTERED SYMBOL
 
@@ -209,13 +227,14 @@ function showstockquotes() {
                 return response.json()
             }).then((json) => {
                 stockquotesdiv = `
-                    <div>
-                    <div> ${stock}</div>
-                    <div> CURRENT PRICE:   ${json.c}</div>
-                    <div> HIGH OF THE DAY:  ${json.h}</div>
-                    <div> LOW OF THE DAY: ${json.l}</div>
-                    <div>OPEN PRICE FOR TODAY: ${json.o}</div>
-                    <div> PREVIOUS CLOSE PRICE: ${json.pc}</div>
+                    <div id="stockquotesdiv">
+                    <div class="bannerquotesboxcompanysymbol"> ${stock}</div>
+                    <div class="quotesbox"> CURRENT PRICE:   ${json.c}</div>
+                    <div class="quotesbox"> HIGH OF THE DAY:  ${json.h}</div>
+                    <div class="quotesbox"> LOW OF THE DAY: ${json.l}</div>
+                    <div class="quotesbox">OPEN PRICE FOR TODAY: ${json.o}</div>
+                    <div class="quotesbox"> PREVIOUS CLOSE PRICE: ${json.pc}</div>
+                    <button onclick="showcompanysdetails('${stock}')">Get More Details</button>
                     </div>
                     `
                 stocksdisplay.insertAdjacentHTML('beforeend', stockquotesdiv)
@@ -236,17 +255,44 @@ function refreshstockquotes() {
                     return response.json()
                 }).then((json) => {
                     stockquotesdiv = `
-                        <div>
-                        <div> ${stock}</div>
-                        <div> CURRENT PRICE:   ${json.c}</div>
-                        <div> HIGH OF THE DAY:  ${json.h}</div>
-                        <div> LOW OF THE DAY: ${json.l}</div>
-                        <div>OPEN PRICE FOR TODAY: ${json.o}</div>
-                        <div> PREVIOUS CLOSE PRICE: ${json.pc}</div>
+                        <div id="stockquotesdiv">
+                        <div class="bannerquotesboxcompanysymbol"> ${stock}</div>
+                        <div class="quotesbox"> CURRENT PRICE:   ${json.c}</div>
+                        <div class="quotesbox"> HIGH OF THE DAY:  ${json.h}</div>
+                        <div class="quotesbox"> LOW OF THE DAY: ${json.l}</div>
+                        <div class="quotesbox">OPEN PRICE FOR TODAY: ${json.o}</div>
+                        <div class="quotesbox"> PREVIOUS CLOSE PRICE: ${json.pc}</div>
+                        <button onclick="showcompanysdetails('${stock}')">Get More Details</button>
                        </div>
                        `
                     stocksdisplay.insertAdjacentHTML('beforeend', stockquotesdiv)
                 })
         }
     }, 60000)
+}
+
+
+function showcompanysdetails(companysymbol) {
+    fetch(`https://finnhub.io/api/v1/stock/profile2?symbol=${companysymbol}&token=c135c0n48v6rj20a8qpg`)
+        .then((response) => {
+            return response.json()
+        }).then((json) => {
+            let companydetaildiv = `
+                <div>
+                <img  id="companyimg" src="${json.logo}">
+                </div>
+                <div class="quotesbox">
+                company name: ${json.name}
+                </div>
+                <div class="quotesbox">
+                industry: ${json.finnhubIndustry}
+                </div>
+                <div class="quotesbox">
+                website: <a href="${json.weburl}" target="blank">${json.weburl}</a>
+                </div>
+                
+                `
+            displaycomapnydetail.innerHTML = companydetaildiv;
+        })
+
 }
