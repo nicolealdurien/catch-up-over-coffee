@@ -1,0 +1,16 @@
+.headerstockdisplay {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background: black;
+}
+
+.bannerquotesbox {
+    margin-left: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    height: 35px;
+    width: auto;
+    padding: 2px;
+}

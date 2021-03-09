@@ -12,7 +12,7 @@
 
     <!-- *** custom CSS ***  -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/stocks.css">
+    <link rel="stylesheet" href="./stocks-style.css">
 </head>
 
 <main class="wrapper">
@@ -28,16 +28,21 @@
         </article>
     </section>
     <div class="content-wrapper">
-    <div id="headerstockdisplay">
-        <div id="applestockdisplay"></div>
-    </div>
+        <div class="headerstockdisplay">
+            <h5 id="applestockdisplay" class="bannerquotesbox"></h5>
+            <h5 id="fbstockdisplay" class="bannerquotesbox"></h5>
+            <h5 id="googlestockdisplay" class="bannerquotesbox"></h5>
+            <h5 id="microsoftstockdisplay" class="bannerquotesbox"></h5>
+            <h5 id="amazonstockdisplay" class="bannerquotesbox"></h5>
+            <h5 id="teslastockdisplay" class="bannerquotesbox"></h5>
+        </div>
 
-    <div id="inputsection">
-        <h1>Enter Stock Ticker Symbol: </h1>
-        <input type="text" placeholder="e.g., AAPL" id="stocksymboltextbox">
-        <a href="#" id="btnsubmit" class="button">Get Stock Quote</a>
-    </div>
-    <div id="stocksdisplay"></div>
+        <div id="inputsection">
+            <h1>Enter Stock Ticker Symbol: </h1>
+            <input type="text" placeholder="e.g., AAPL" id="stocksymboltextbox">
+            <a href="#" id="btnsubmit" class="button">Get Stock Quote</a>
+        </div>
+        <div id="stocksdisplay"></div>
     </div>
     <!-- <div class="content-wrapper">
 
