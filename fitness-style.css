@@ -1,0 +1,12 @@
+#photoDIV {
+  display: grid;
+  justify-content: center;
+}
+
+body {
+  color: black;
+  /* background-color:#81b9b9; */
+
+  
+}
+

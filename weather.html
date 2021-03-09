@@ -1,20 +1,53 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="weather-style.css" rel="stylesheets" >
-    </head>
-        <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch Up Over Coffee</title>
+  <meta name="description" content="Catch Up Over Coffee">
+  <meta name="author" content="Nicole Aldurien, Summer Johnson, Neil Shah, and Mike Warren">
+
+<!-- *** custom CSS ***  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="wrapper">
+    <section class="header">
+      <h1>Weather</h1>
+      <article>
+          <p>Will it be sunny? Cloudy? Rainy? Get local weather by ZIP Code.</p>
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="stocks.html">Stocks</a>
+          <a href="fitness.html">Fitness</a>
+          <a href="nutrition.html">Nutrition</a>
+      </article>
+    </section>
+
+    <div class="content-wrapper" id="weather-wrapper">
+      <div id="weatherInput" class="weather-column">
+
             <h3 id="weatherTitle">Get Weather For Today </h3>
-            <img id="image" src="image assests/images.png">
-            <br>
-            <input type="text" onfocus="this.value=''" id="getWeatherTextBox" placeholder="Enter Zipcode">
-            <button id="zipcodeCityWeatherBtn">Search</button>
-            <ul id="displayWeather"></ul>
-             
-            <script src="basic-Weather.js"></script>
-        </body>
+            <img id="image" src="images/sun-cloud.png">
+            <br><br>
+            <input type="text" onfocus="this.value=''" id="getWeatherTextBox" placeholder="Enter ZIP">
+            <button id="btnGetWeather">Search</button>
+            
+      </div>
+      <div id="weatherOutput" class="weather-column">
+        <ul id="displayWeatherUL"></ul>
+      </div> 
+      <div id="emptyDIVForSpacing"></div>
+    </div>
+
+  
+
+<!-- *** JS below here ***  -->
+<script src="basic-Weather.js"></script>
+
+</body>
 </html>
+

@@ -1,18 +1,44 @@
-<!DOCTYPE html>
+
+
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheets" href="nutrition-style.css"
-    </head>
-    <body>
-        <button id"=displayNutritionFactsBtn>Get Nutrition Information</button>
-        <ul id="nutritionFactsUL"></ul>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch Up Over Coffee</title>
+  <meta name="description" content="Catch Up Over Coffee">
+  <meta name="author" content="Nicole Aldurien, Summer Johnson, Neil Shah, and Mike Warren">
+
+<!-- *** custom CSS ***  -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="nutrition-style.css">
+</head>
+<body>
+<main class="wrapper">
+    <section class="header">
+      <h1>Nutrition</h1>
+      <article>
+          <p>Be armed for a healthy day and healthy life with the latest nutrition info!</p>
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="weather.html">Weather</a>
+          <a href="stocks.html">Stocks</a>
+          <a href="fitness.html">Fitness</a>
+      </article>
+    </section>
+
+    <div class="content-wrapper">
         
-        
-        <script src="nutrition.js"></script>
-        <script src="nutritionMain.js"></script>
-    </body>
+        <ul id="nutritionFactsUL"></ul>       
+
+    </div>
+
+
+<!-- *** JS below here ***  -->
+<script src="nutritionFacts.js"></script>
+<script src="nutritionApp.js"></script>
+
+</body>
 </html>
+                             
