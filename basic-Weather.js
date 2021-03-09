@@ -24,7 +24,7 @@ zipcodeCityWeatherBtn.addEventListener("click", function() {
 
     function displayCityWeather(weatherInCity) {
         let zipcodeEntered = getWeatherTextBox.value
-        getWeatherTextBox = ''
+        
         let cityWeatherItems = `<h2 id="weatherDisplayOnPage">  
                                          
                                         <i> City: <i>
@@ -50,4 +50,3 @@ zipcodeCityWeatherBtn.addEventListener("click", function() {
 
     }
 
-    
