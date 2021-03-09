@@ -5,7 +5,7 @@ let exercises = [
     english_name: "Boat",
     img_url:
       "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
-    description: ""
+    description: "To come into the pose, begin seated on the floor. Bend your knees, bringing the soles of the feet to the ground, and bring the palms to the back of the thighs. Begin to lean back as you shift your weight from your feet, eventually lifting the soles of the feet off the ground. Balance on the sitting bones, not leaning right back on to the tailbone. Lengthen the spine to broaden and lift the chest."
   },
   {
     id: 2,

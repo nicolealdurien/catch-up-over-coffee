@@ -11,33 +11,34 @@
 
 <!-- *** custom CSS ***  -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="styles/weather.css">
 </head>
 <body>
 <main class="wrapper">
     <section class="header">
       <h1>Weather</h1>
       <article>
-          <p>Something about weather???</p>
+          <p>Will it be sunny? Cloudy? Rainy? Get local weather by ZIP Code.</p>
           <a href="index.html">Home</a>
           <a href="news.html">News</a>
-          <a href="weather.html">Stocks</a>
+          <a href="stocks.html">Stocks</a>
           <a href="fitness.html">Fitness</a>
           <a href="nutrition.html">Nutrition</a>
       </article>
     </section>
 
-    <div class="content-wrapper">
-        
+    <div class="content-wrapper" id="weather-wrapper">
+      <div id="weatherInput" class="weather-column">
             <h3 id="weatherTitle">Get Weather For Today </h3>
             <img id="image" src="images/sun-cloud.png">
-            <br>
-            <input type="text" onfocus="this.value=''" id="getWeatherTextBox" placeholder="Enter Zipcode">
-            <button id="zipcodeCityWeatherBtn">Search</button>
-            <ul id="displayWeather"></ul>
-             
-           
-
+            <br><br>
+            <input type="text" onfocus="this.value=''" id="getWeatherTextBox" placeholder="Enter ZIP">
+            <button id="btnGetWeather">Search</button>
+            
+      </div>
+      <div id="weatherOutput" class="weather-column">
+        <ul id="displayWeatherUL"></ul>
+      </div> 
+      <div id="emptyDIVForSpacing"></div>
     </div>
 
   
