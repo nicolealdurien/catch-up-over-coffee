@@ -171,6 +171,7 @@ li {
   list-style-type: none;
 }
 
+
 /* Styling for Weather Page*/
 #weather-wrapper {
   display: flex;
@@ -190,6 +191,7 @@ li {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 
 /* Styling for Nutrition Page*/
 #nutritionFactsUL {
