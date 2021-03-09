@@ -5,35 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="horoscope.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="horoscope-style.css">
 </head>
 <body>
-    <label for="Horoscopes signs">Choose your sign:</label>
-    <select name="Horoscopes" id="Horoscopes">
-        <option value="capricorn">Capricorn</option>
-        <option value="aquarius">Aquarius</option>
-        <option value="pisces">Pisces</option>
-        <option value="aries">Aries</option>
-        <option value="taurus">Taurus</option>
-        <option value="gemini">Gemini</option>
-        <option value="cancer">Cancer</option>
-        <option value="leo">Leo</option>
-        <option value="virgo">Virgo</option>
-        <option value="libra">Libra</option>
-        <option value="scorpio">Scorpio</option>
-        <option value="sagittarius">Sagittarius</option>
-    </select>
-    <label for="Day">Choose which day:</label>
-    <select name="Day" id="day">
-        <option value="today">Today</option>
-        <option value="yesterday">Yesterday</option>
-        <option value="tomorrow">Tomorrow</option>
-    </select>
+    <main class="wrapper">
+        <section class="header">
+          <h1>Horoscope</h1>
+          <article>
+              <p>What do the stars have to say about your life?</p>
+              <a href="index.html">Home</a>
+              <a href="news.html">News</a>
+              <a href="weather.html">Weather</a>
+              <a href="stocks.html">Stocks</a>
+              <a href="fitness.html">Fitness</a>
+              <a href="nutrition.html">Nutrition</a>
+          </article>
+        </section>
+    
+    <div class="content-wrapper">
+            
+        <select name="Horoscopes" id="Horoscopes">
+            <option value="" disabled selected>Select your sign &nbsp;&nbsp;</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquarius">Aquarius</option>
+            <option value="pisces">Pisces</option>
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <option value="cancer">Cancer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="libra">Libra</option>
+            <option value="scorpio">Scorpio</option>
+            <option value="sagittarius">Sagittarius</option>
+        </select>
+        <select name="Day" id="day">
+            <option value="" disabled selected>Select horoscope for yesterday, today, or tomorrow&nbsp;&nbsp;</option>
+            <option value="today">Today</option>
+            <option value="yesterday">Yesterday</option>
+            <option value="tomorrow">Tomorrow</option>
+        </select>
 
-    <button id="Horoscopebtn">Submit</button>
-    <ul id="showHoroscope"></ul>
-
-
+        <a href="#" id ="Horoscopebtn" class="button">Get Your Horoscope</a>
+        <ul id="showHoroscope"></ul>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</main>
+<footer>
+  <p>&copy; 2021. Made by Aldurien/Johnson/Shah/Warren.</p>
+</footer> 
     <script src="horoscope.js"></script>
 </body>
 </html>
