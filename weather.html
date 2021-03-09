@@ -18,7 +18,7 @@
     <section class="header">
       <h1>Weather</h1>
       <article>
-          <p>Will it be sunny? Cloudy? Rainy? Get local weather by ZIP Code.</p>
+          <p>Rainy? Cloudy? Sunny? Snow? Check before you're on the go!</p>
           <a href="index.html">Home</a>
           <a href="news.html">News</a>
           <a href="stocks.html">Stocks</a>
@@ -26,25 +26,88 @@
           <a href="nutrition.html">Nutrition</a>
       </article>
     </section>
-
-    <div class="content-wrapper" id="weather-wrapper">
-      <div id="weatherInput" class="weather-column">
-
-            <h3 id="weatherTitle">Get Weather For Today </h3>
-            <img id="image" src="images/sun-cloud.png">
-            <br><br>
-            <input type="text" onfocus="this.value=''" id="getWeatherTextBox" placeholder="Enter ZIP">
-            <button id="btnGetWeather">Search</button>
-            
+    <h1 id="weatherTitle">Get Weather For Today </h1>
+    <div class="content-wrapper">
+      <div class="search-container">
+        
+        <div class="search-item">
+            <input type="text" id="zipTextBox" placeholder="90210">
+            <a href="#" id ="btnZipWeather" class="button">Get Weather By ZIP</a>
+        </div>
+        <div class="search-item">
+          <input type="text" id="cityTextBox" placeholder="Beverly Hills">
+          <select id="stateDropdown" name="stateDropdown" placeholder="Choose a state:">
+            <option value="" disabled selected>Select a state</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Guam">Guam</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option>
+            <option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Virgin Islands">Virgin Islands</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>		
+          </select>
+          <a href="#" id ="btnCityStateWeather" class="button">Get Weather By City/State</a>
+        </div>
+      </div><br><br>
+      <div class="weather-wrapper">
+        <div class="weather-column">
+          <br><br><img id="image" src="images/sun-cloud.png">
+        </div>
+        <div id="weatherOutput" class="weather-column">
+          <ul id="displayWeatherUL"></ul>
+        </div> 
       </div>
-      <div id="weatherOutput" class="weather-column">
-        <ul id="displayWeatherUL"></ul>
-      </div> 
-      <div id="emptyDIVForSpacing"></div>
     </div>
 
-  
-
+  </main>
+  <footer>
+    <p>&copy; 2021. Made by Aldurien/Johnson/Shah/Warren.</p>
+  </footer> 
 <!-- *** JS below here ***  -->
 <script src="basic-Weather.js"></script>
 

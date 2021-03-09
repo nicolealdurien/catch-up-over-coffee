@@ -8,17 +8,11 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
-p,
-a {
+p, a {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -63,19 +57,19 @@ a:hover {
     color: white;
 }
 
-.header>h1 {
+.header > h1 {
     font-size: 4rem;
     padding-bottom: 1rem;
     background-color: rgba(0, 0, 0, .3);
 }
 
-.header>article>p {
+.header > article > p {
     font-size: 1.5rem;
     font-weight: 200;
     background-color: rgba(0, 0, 0, .3);
 }
 
-.header>article>a {
+.header > article > a {
     padding: 1rem;
     margin-top: .75rem;
 }
@@ -84,11 +78,20 @@ a:hover {
 /* super-light div styling for subpages - just adds a tiny bit of padding.*/
 
 .content-wrapper {
-    padding: 20px
+    padding: 30px
 }
 
+.search-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(255, 237, 214);
+    box-shadow: 1px 1px 2px 1px black
+  }
 
-/* cards styles for front page*/
+
+/* cards styles for front page */
 
 .cards {
     padding: .5rem;
@@ -156,7 +159,7 @@ footer {
 }
 
 
-/* Styling for News Page*/
+/* Styling for News Page */
 
 .news-link:link {
     background-color: white;
@@ -189,9 +192,9 @@ li {
 }
 
 
-/* Styling for Weather Page*/
+/* Styling for Weather Page */
 
-#weather-wrapper {
+.weather-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -208,10 +211,11 @@ li {
 #weatherTitle {
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;    
 }
 
 
-/* Styling for Nutrition Page*/
+/* Styling for Nutrition Page */
 
 #nutritionFactsUL {
     font-size: 1.25rem;
