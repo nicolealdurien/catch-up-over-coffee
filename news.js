@@ -1,7 +1,7 @@
 const allNewsUL = document.getElementById("allNewsUL")
-const searchTopicTextBox = document.getElementById("searchTopicTextBox")
 const btnSearchSource = document.getElementById("btnSearchSource")
-const btnSearchTopic = document.getElementById("btnSearchTopic")
+const btnSearchKeyword = document.getElementById("btnSearchKeyword")
+const btnSearchCategory = document.getElementById("btnSearchCategory")
 
 // Display basic news on page load
 function getNews() {
@@ -32,7 +32,10 @@ function displayNews(stories) {
                         `
         allNewsUL.insertAdjacentHTML('beforeend', storyItem)      
         }
-    }
+    searchSourceTextBox.value = ""
+    searchKeywordTextBox.value = ""
+
+}
 
 
 // If entry in JSON is null for a certain field (say, "Author: null"), data is removed from display)
@@ -62,7 +65,6 @@ function equalityCheck(title, description) {
 
 // Search by sources
 btnSearchSource.addEventListener("click", function() {
-    event.preventDefault()
     const searchSourceTextBox = document.getElementById("searchSourceTextBox")
     const searchSource = searchSourceTextBox.value
     fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&sources=${searchSource}`)
@@ -73,12 +75,12 @@ btnSearchSource.addEventListener("click", function() {
     })
   })
 
-// Search by topic
-btnSearchTopic.addEventListener("click", function() {
-    event.preventDefault()
-    const searchTopicTextBox = document.getElementById("searchTopicTextBox")
-    const searchTopic = searchTopicTextBox.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&keywords=${searchTopic}`)
+
+// Search by keyword
+btnSearchKeyword.addEventListener("click", function() {
+    const searchKeywordTextBox = document.getElementById("searchKeywordTextBox")
+    const searchKeyword = searchKeywordTextBox.value
+    fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&keywords=${searchKeyword}`)
     .then(response => {
         return response.json()
     }).then(result => {
@@ -87,3 +89,30 @@ btnSearchTopic.addEventListener("click", function() {
   }) 
     
 
+
+// Search by category/topic
+const dropdownSelectCategory = document.getElementById("dropdownSelectCategory")
+
+// Searches when dropdown option is selected
+dropdownSelectCategory.addEventListener("change", function () {
+  let chosenCategory = dropdownSelectCategory.options[dropdownSelectCategory.selectedIndex]
+  let passCategoryToFetch = chosenCategory.value
+  fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&categories=${passCategoryToFetch}`)
+  .then(response => {
+      return response.json()
+  }).then(result => {
+      displayNews(result)        
+  })
+}) 
+
+// Can go back to previously-chosen dropdown option with just the button click
+btnSearchCategory.addEventListener("click", function() {
+    let chosenCategory = dropdownSelectCategory.options[dropdownSelectCategory.selectedIndex]
+    let passCategoryToFetch = chosenCategory.value
+    fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&categories=${passCategoryToFetch}`)
+    .then(response => {
+        return response.json()
+    }).then(result => {
+        displayNews(result)        
+    })
+  }) 
