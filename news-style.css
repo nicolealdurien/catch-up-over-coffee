@@ -1,11 +1,11 @@
 .search-container {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    background-color: rgb(255, 237, 214);
-    box-shadow: 1px 1px 2px 1px black
-  }
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: rgb(255, 237, 214);
+  box-shadow: 1px 1px 2px 1px black
+}
 
   .news-header-photo {
     border-radius: 15%;
