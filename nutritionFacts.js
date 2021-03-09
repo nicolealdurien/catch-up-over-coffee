@@ -43,7 +43,7 @@ let nutritionFacts = [
     },
     {   "id": 11,
         "fact": "Milk is fortified with vitamin D and is the major dietary source, with 100 IU per cup. Fatty fish is naturally rich in D; egg yolks and mushrooms contain small amounts (some mushrooms are now being grown to contain additional vitamin D by exposing them to UV light). Orange juice, soy milk, margarine, yogurt, and breakfast cereal may also be fortified. But to get the 800 to 1,000 IU a day we recommend, vitamin D supplements are usually necessary, since it's difficult to get this much from food.",
-        "image": "images/vitamin-d.jpg" //Photo by Mathilde Langevin on Unsplash.com
+        "image": "images/milk.jpg" //Photo by Brian Suman on Unsplash.com
     }
 ]
 
