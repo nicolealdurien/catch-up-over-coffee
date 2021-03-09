@@ -23,6 +23,7 @@ btnGetWeather.addEventListener("click", function() {
 
     function displayCityWeather(weatherInCity) {
         let zipcodeEntered = getWeatherTextBox.value
+
         let cityWeatherItem = `
                                 <h2>Today's Weather in  ${weatherInCity.name}:</h2>
                                 Current Temp - ${weatherInCity.main.temp} &#176;F
@@ -34,6 +35,6 @@ btnGetWeather.addEventListener("click", function() {
         displayWeatherUL.innerHTML = cityWeatherItem
         getWeatherTextBox.value = ""
 
+
     }
 
-    
