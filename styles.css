@@ -184,6 +184,33 @@ footer {
     opacity: .6;
 }
 
-li {
-    list-style-type: none;
+li { 
+  list-style-type: none;
+}
+
+
+/* Styling for Weather Page*/
+#weather-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.weather-column {
+  flex: 1 1 0px;
+}
+
+#displayWeatherUL {
+  font-size: 1.5rem;
+}
+
+#weatherTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Styling for Nutrition Page*/
+#nutritionFactsUL {
+  font-size: 1.25rem;
 }
