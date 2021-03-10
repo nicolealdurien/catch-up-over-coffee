@@ -7,8 +7,13 @@
   box-shadow: 1px 1px 2px 1px black
 }
 
-  .news-header-photo {
+  .news-subheader-photo {
     border-radius: 15%;
-    height: 250px;
-    width: 300px;
+    height: 200px;
+    width: 250px;
 }
+
+#news-subheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
