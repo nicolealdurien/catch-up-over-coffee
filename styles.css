@@ -237,3 +237,22 @@ li {
         font-size: 3.5rem; 
     }
 }
+
+/* Styling for Affirmations Section */
+#affirmationsDisplayUL{
+    text-align: center;
+    color:goldenrod;
+   
+    font-style: italic;
+    
+    
+
+}
+
+/* Styling for Fitness Section */
+
+#fitnessDisplay {
+    text-align: center;
+    
+}
+
