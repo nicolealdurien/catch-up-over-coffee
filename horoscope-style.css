@@ -1,0 +1,28 @@
+.zodiac-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+}
+
+.zodiac-image {
+    width:200px;
+    height: 200px;
+    padding: .3rem;
+}
+
+.horoscope-search-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(255, 237, 214);
+    box-shadow: 1px 1px 2px 1px black
+}
+
+#showHoroscope {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
