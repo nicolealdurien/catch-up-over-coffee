@@ -2,24 +2,34 @@
 
 
 
-let affirmationsDisplay = document.getElementById("affirmationsDisplay")
+let affirmationsDisplay = document.getElementById("affirmationsDisplayUL")
 
 
 function displayAffirmations() {
-    for(let index= 0; index < affirmationsList.length; index++) {
-        let affirmations = affirmationsList[index]
-        console.log(affirmations.affirmation)
+    
+        let affirmations = affirmationsList[Math.floor(Math.random() * affirmationsList.length)]
+        
         let affirmationsItem= `
                               <h2 id="affirmationsItems">
-                             <i> ${affirmations.affirmation} <i>
+                             <i> ${affirmations.affirmation} <i> 
+                          
+                             
                               </h2>
         
         
         `
-        affirmationsDisplayUL.insertAdjacentHTML("beforeend", affirmationsItem)
-    }
+        affirmationsDisplay.innerHTML = affirmationsItem
+  
 
 
 }
 
 displayAffirmations()
+
+function refreshAffirmationsDisplay() {
+    let intervalid = window.setInterval(function() {
+        displayAffirmations()
+    }, 10000)
+}
+
+refreshAffirmationsDisplay()
