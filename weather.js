@@ -31,13 +31,10 @@ btnCityStateWeather.addEventListener("click", function() {
     let city = cityTextBox.value
     let chosenState = stateDropdown.options[stateDropdown.selectedIndex]
     let state = chosenState.value
-    console.log(city)
-    console.log(state)
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${state}&appid=e9b850f32e29330be12e3698eeed5a05`)
             .then((response) => {
                 return response.json()
             }).then((result) => {
-                console.log(result)
                 displayCurrentWeather(result)
             })
     })
@@ -56,5 +53,7 @@ function displayCurrentWeather(weatherInCity) {
                             Today's High - ${weatherInCity.main.temp_max} &#176F                            `
     displayWeatherUL.innerHTML = cityWeatherItem
     zipTextBox.value = ""
+    cityTextBox.value = ""
+    stateDropdown.value = ""
 }
 

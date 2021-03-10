@@ -3,7 +3,7 @@ let stocksymboltextbox = document.getElementById("stocksymboltextbox");
 let btnsubmit = document.getElementById("btnsubmit");
 let companynametextbox = document.getElementById("companynametextbox");
 let searchbtn = document.getElementById("searchbtn");
-let displaycomapnydetail = document.getElementById("displaycomapnydetail")
+let displaycompanydetail = document.getElementById("displaycompanydetail")
 
 // showing  fixed no. companies quotes in  scrooling right to left
 
@@ -196,8 +196,8 @@ function searchsymbol() {
         }).then((json) => {
             symboldiv = `
                 <div>
-               <div class="quotesbox"> Name of company : ${json.result[0].description}</div>
-               <div class="quotesbox"> symbol of company: ${json.result[0].symbol} </div>
+               <div class="quotesbox"> Company Name: ${json.result[0].description}</div>
+               <div class="quotesbox"> Stock Ticker Symbol: ${json.result[0].symbol} </div>
                </div>
                `
             symboldisplay.innerHTML = symboldiv
@@ -229,19 +229,19 @@ function showstockquotes() {
                 stockquotesdiv = `
                     <div id="stockquotesdiv">
                     <div class="bannerquotesboxcompanysymbol"> ${stock}</div>
-                    <div class="quotesbox"> CURRENT PRICE:   ${json.c}</div>
-                    <div class="quotesbox"> HIGH OF THE DAY:  ${json.h}</div>
-                    <div class="quotesbox"> LOW OF THE DAY: ${json.l}</div>
-                    <div class="quotesbox">OPEN PRICE FOR TODAY: ${json.o}</div>
-                    <div class="quotesbox"> PREVIOUS CLOSE PRICE: ${json.pc}</div>
-                    <button onclick="showcompanysdetails('${stock}')">Get More Details</button>
+                    <div class="quotesbox">
+                    Current Price:   ${json.c}<br><br>
+                    Today's High:  ${json.h}<br><br>
+                    Today's Low: ${json.l}<br><br>
+                    Today's Open Price: ${json.o}<br><br>
+                    Previous Close Price: ${json.pc}<br></div>                
+                    <a href="#quotesbox" onclick="showcompanysdetails('${stock}')" class="button">Get More Details</a><br>
                     </div>
                     `
                 stocksdisplay.insertAdjacentHTML('beforeend', stockquotesdiv)
             })
     }
 }
-
 
 
 function refreshstockquotes() {
@@ -257,12 +257,13 @@ function refreshstockquotes() {
                     stockquotesdiv = `
                         <div id="stockquotesdiv">
                         <div class="bannerquotesboxcompanysymbol"> ${stock}</div>
-                        <div class="quotesbox"> CURRENT PRICE:   ${json.c}</div>
-                        <div class="quotesbox"> HIGH OF THE DAY:  ${json.h}</div>
-                        <div class="quotesbox"> LOW OF THE DAY: ${json.l}</div>
-                        <div class="quotesbox">OPEN PRICE FOR TODAY: ${json.o}</div>
-                        <div class="quotesbox"> PREVIOUS CLOSE PRICE: ${json.pc}</div>
-                        <button onclick="showcompanysdetails('${stock}')">Get More Details</button>
+                        <div class="quotesbox">
+                        Current Price:   ${json.c}<br><br>
+                        Today's High:  ${json.h}<br><br>
+                        Today's Low: ${json.l}<br><br>
+                        Today's Open Price: ${json.o}<br><br>
+                        Previous Close Price: ${json.pc}<br></div>
+                        <a href="#quotesbox" onclick="showcompanysdetails('${stock}')" class="button">Get More Details</a><br>
                        </div>
                        `
                     stocksdisplay.insertAdjacentHTML('beforeend', stockquotesdiv)
@@ -277,22 +278,17 @@ function showcompanysdetails(companysymbol) {
         .then((response) => {
             return response.json()
         }).then((json) => {
-            let companydetaildiv = `
+            let companydetaildiv = `<br>
                 <div>
-                <img  id="companyimg" src="${json.logo}">
-                </div>
+                <img id="companyimg" src="${json.logo}">
+                </div><br>
                 <div class="quotesbox">
-                company name: ${json.name}
+                Company Name: ${json.name}<br><br>
+                Industry: ${json.finnhubIndustry}<br><br>
+                Website: <a href="${json.weburl}" class="stocks-link" target="blank" id="company-link">${json.weburl}</a><br>
                 </div>
-                <div class="quotesbox">
-                industry: ${json.finnhubIndustry}
-                </div>
-                <div class="quotesbox">
-                website: <a href="${json.weburl}" target="blank">${json.weburl}</a>
-                </div>
-                
                 `
-            displaycomapnydetail.innerHTML = companydetaildiv;
+        displaycompanydetail.innerHTML = companydetaildiv;
         })
 
 }

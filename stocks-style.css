@@ -16,27 +16,31 @@
     margin: 22px;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 1px 1px 2px 1px black
 }
 
 .bannerquotesboxcompanysymbol {
     font-size: 40px;
     letter-spacing: 2px;
     height: 45px;
-    width: 450px;
+    width: 300px;
     color: white;
-    background: blueviolet;
+    background: #a520da;
     text-align: center;
     margin-left: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 2px 1px black
 }
 
 .quotesbox {
     font-size: 20px;
     letter-spacing: 2px;
-    height: 35px;
-    width: 450px;
+    width: 290px;
     color: white;
     background: black;
     margin-left: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 1px black
 }
 
 button {
@@ -59,8 +63,18 @@ button {
     justify-items: space-evenly;
 }
 
-#displaycomapnydetail {
+#displaycompanydetail {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.stocks-link:link {
+    background-color: black;
+    color: blue;
+}
+
+.stocks-link:visited {
+    background-color: black;
+    color: purple;
 }
