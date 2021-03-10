@@ -5,7 +5,7 @@ const btnSearchCategory = document.getElementById("btnSearchCategory")
 
 // Retrieve basic news object on page load and passes it to de-duplicator.
 function getNews() {
-fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&countries=us,au,gb,in,nz,ie')
+fetch('https://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&countries=us,au,gb,in,nz,ie')
     .then(response => {
         return response.json()      
     }).then(result => {
@@ -86,7 +86,7 @@ function equalityCheck(title, description) {
 btnSearchSource.addEventListener("click", function() {
     const searchSourceTextBox = document.getElementById("searchSourceTextBox")
     const searchSource = searchSourceTextBox.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&sources=${searchSource}`)
+    fetch(`https://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&sources=${searchSource}`)
     .then(response => {
         return response.json()
     }).then(result => {
@@ -99,7 +99,7 @@ btnSearchSource.addEventListener("click", function() {
 btnSearchKeyword.addEventListener("click", function() {
     const searchKeywordTextBox = document.getElementById("searchKeywordTextBox")
     const searchKeyword = searchKeywordTextBox.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&keywords=${searchKeyword}`)
+    fetch(`https://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&keywords=${searchKeyword}`)
     .then(response => {
         return response.json()
     }).then(result => {
@@ -116,7 +116,7 @@ const dropdownSelectCategory = document.getElementById("dropdownSelectCategory")
 dropdownSelectCategory.addEventListener("change", function () {
   let chosenCategory = dropdownSelectCategory.options[dropdownSelectCategory.selectedIndex]
   let passCategoryToFetch = chosenCategory.value
-  fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&categories=${passCategoryToFetch}`)
+  fetch(`https://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&categories=${passCategoryToFetch}`)
   .then(response => {
       return response.json()
   }).then(result => {
@@ -129,7 +129,7 @@ dropdownSelectCategory.addEventListener("change", function () {
 btnSearchCategory.addEventListener("click", function() {
     let chosenCategory = dropdownSelectCategory.options[dropdownSelectCategory.selectedIndex]
     let passCategoryToFetch = chosenCategory.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&categories=${passCategoryToFetch}`)
+    fetch(`https://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&categories=${passCategoryToFetch}`)
     .then(response => {
         return response.json()
     }).then(result => {
