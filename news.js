@@ -5,7 +5,7 @@ const btnSearchCategory = document.getElementById("btnSearchCategory")
 
 // Retrieve basic news object on page load and passes it to de-duplicator.
 function getNews() {
-fetch('http://newsapi.org/v2/everything?q=trip%20advisor&apiKey=35e83e0edebf4ee9bf2e6fff163f1f89')
+fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en')
     .then(response => {
         return response.json()      
     }).then(result => {
