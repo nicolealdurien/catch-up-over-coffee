@@ -3,13 +3,13 @@ const btnSearchSource = document.getElementById("btnSearchSource")
 const btnSearchKeyword = document.getElementById("btnSearchKeyword")
 const btnSearchCategory = document.getElementById("btnSearchCategory")
 
-// Display basic news on page load
+// Retrieve basic news object on page load and passes it to de-duplicator.
 function getNews() {
 fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&countries=us,au,gb,in,nz,ie')
     .then(response => {
         return response.json()      
     }).then(result => {
-        displayNews(result)
+        removeDupes(result)
     }).catch(error => {
         console.log(error);
     });
@@ -18,10 +18,29 @@ fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b
 getNews()
 
 
-function displayNews(stories) {
-    allNewsUL.innerHTML = ""
+// Removes duplicate stories from response object then passes to display function
+function removeDupes(stories) {
+    let deDupedTitles = []
+    let deDupedStories = []
     for (let index = 0; index < stories.data.length; index++) {
         let story = stories.data[index]
+        if (deDupedTitles.includes(story.title)) {
+            continue
+        }
+        else {
+            deDupedTitles.push(story.title)
+            deDupedStories.push(story)
+        }
+    displayNews(deDupedStories)
+    console.log(deDupedStories)
+    }
+}
+
+// Displays news when called by other functions.
+function displayNews(stories) {
+    allNewsUL.innerHTML = ""
+    for (let index = 0; index < stories.length; index++) {
+        let story = stories[index]
         let storyItem = `
                         <li>
                             <b><a href = "${story.url}" class="news-link">${story.title}</a></b><br>
@@ -38,7 +57,7 @@ function displayNews(stories) {
 }
 
 
-// If entry in JSON is null for a certain field (say, "Author: null"), data is removed from display)
+// If entry in JSON is null for a certain field (say, "Author: null"), this removes the data from being displayed.
 function nullCheck (label) {
     if (label == null) {
         return label = ""
@@ -49,7 +68,7 @@ function nullCheck (label) {
 }
 
 
-// If description just reiterates the title exactly, the description is not shown.
+// If description just reiterates the title exactly, this prevents the description from showing.
 function equalityCheck(title, description) {
     strTitle = String(title)
     strDescription = String(description)
@@ -71,7 +90,7 @@ btnSearchSource.addEventListener("click", function() {
     .then(response => {
         return response.json()
     }).then(result => {
-        displayNews(result)        
+        removeDupes(result)        
     })
   })
 
@@ -84,7 +103,7 @@ btnSearchKeyword.addEventListener("click", function() {
     .then(response => {
         return response.json()
     }).then(result => {
-        displayNews(result)        
+        removeDupes(result)     
     })
   }) 
     
@@ -101,9 +120,10 @@ dropdownSelectCategory.addEventListener("change", function () {
   .then(response => {
       return response.json()
   }).then(result => {
-      displayNews(result)        
+      removeDupes(result)         
   })
 }) 
+
 
 // Can go back to previously-chosen dropdown option with just the button click
 btnSearchCategory.addEventListener("click", function() {
@@ -113,6 +133,7 @@ btnSearchCategory.addEventListener("click", function() {
     .then(response => {
         return response.json()
     }).then(result => {
-        displayNews(result)        
+        removeDupes(result)        
     })
   }) 
+

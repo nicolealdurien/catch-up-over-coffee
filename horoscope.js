@@ -18,7 +18,7 @@ horoscopebtn.addEventListener("click" , function() {
         }).then(response => response.json())
         .then(horoscopeAPI => {
             console.log(horoscopeAPI)
-            displayHoroscope(horoscopeAPI)
+            displayHoroscope(horoscopeAPI, horoscopePicked)
         })
    
 
@@ -27,15 +27,13 @@ horoscopebtn.addEventListener("click" , function() {
 
 
 
-function displayHoroscope(horoscopeAPI) {
+function displayHoroscope(horoscopeAPI, sign) {
     
     let horoscopeItems = `<h3 id=horoscopeForToday>
-                           <b>Your Horoscope for Today:<b> 
-                           <br>  
-                          Date:  ${horoscopeAPI.current_date} 
+                           <u>Your Horoscope For ${horoscopeAPI.current_date}</u>
                           <br>
-                          Note to self: ${horoscopeAPI.description} 
-                          <br>
+                          <i>${horoscopeAPI.description}</i>
+                          <br><br>
                           Mood:  ${horoscopeAPI.mood}
                           <br>
                           Lucky Color:  ${horoscopeAPI.color}
@@ -43,7 +41,6 @@ function displayHoroscope(horoscopeAPI) {
                           Lucky Number: ${horoscopeAPI.lucky_number}
                           <br>
                           Lucky Time:   ${horoscopeAPI.lucky_time}
-                           
                           </h3>
     
     `

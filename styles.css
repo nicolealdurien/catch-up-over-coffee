@@ -49,8 +49,6 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
-    /* width property is commented out for now because it was fucking up the spacing of the header description <p> section.
-  width: 100%; */
 }
 
 .header>* {
@@ -226,7 +224,7 @@ li {
 }
 
 
-/* Styling for Horoscope Page */
+/* Styling for Mobile Devices */
 
 @media screen and (max-width: 375px) {
     .cards>ul {
