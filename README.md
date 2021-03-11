@@ -7,7 +7,7 @@ News: The app utilizes the MediaStack API to present the user with general news 
 
 Weather: The app utilizes the OpenWeatherMap API to present the user with current local weather based on geolocation. Weather search options by ZIP code or by city/state are offered for those who do not have location services enabled. The weather page also links to the National Weather Service radar map.
 
-Stocks: The app utilizes 
+Stocks: 
 
 Horoscopes:
 
@@ -18,7 +18,7 @@ Fitness:
 Nutrition:
 
 
-The app is featured with creative designs and functionalities in each page including related animations and an intro video on the home page. The contributers utilized the Google Maps API, Google Distance Matrix API and Google Places API to make distance calculations, show map utilization, and incorporate autocomplete features in the address bars. Another functionality which features the dynamic nature of the app is the changing geolocations of each car where the locations change every 2 seconds. From the authentication side, the app is able to distinguish between logins from a regular user and an admin to provide the corresponding dashboard page for the respective login. Validation are also done to check credentials in the registration process to make sure that they were not used before and that strong passwords are used.
+
 ## Live link: 
 https://catch-up-over-coffee.surge-sh
 
