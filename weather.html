@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catch Up Over Coffee</title>
+  <title>Catch Up Over Coffee - Weather</title>
   <meta name="description" content="Catch Up Over Coffee">
   <meta name="author" content="Nicole Aldurien, Summer Johnson, Neil Shah, and Mike Warren">
 
 <!-- *** custom CSS ***  -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="weather-style.css">
 </head>
 <body>
 <main class="wrapper">
     <section class="header">
       <h1>Weather</h1>
       <article>
-          <p>Rainy? Cloudy? Sunny? Snow? Check before you're on the go!</p>
+          <p>Rainy? Sunny? Cloudy? Snow? Check before you're on the go!</p>
           <a href="https://catch-up-over-coffee.surge.sh/index.html">Home</a>
           <a href="http://catch-up-over-coffee.surge.sh/news.html">News</a>
           <a href="https://catch-up-over-coffee.surge.sh/stocks.html">Stocks</a>
@@ -34,11 +33,11 @@
           <a href="https://radar.weather.gov/#/" id ="btnGetRadar" class="button" target="_blank">Get NWS Radar</a>&nbsp;&nbsp;&nbsp;
         </div>
         <div class="search-item">
-            <input type="text" id="zipTextBox" placeholder="90210">
+            <input type="text" id="zipTextBox" placeholder="Enter ZIP code">
             <a href="#btnZipWeather" id ="btnZipWeather" class="button">Get Weather By ZIP</a>
         </div>
         <div class="search-item">
-          <input type="text" id="cityTextBox" placeholder="Beverly Hills">
+          <input type="text" id="cityTextBox" placeholder="Enter city">
           <select id="stateDropdown" name="stateDropdown" placeholder="Choose a state:">
             <option value="" disabled selected>Select a state</option>
             <option value="Alabama">Alabama</option>
@@ -58,7 +57,8 @@
             <option value="Illinois">Illinois</option>
             <option value="Indiana">Indiana</option>
             <option value="Iowa">Iowa</option>
-            <option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
             <option value="Louisiana">Louisiana</option>
             <option value="Maine">Maine</option>
             <option value="Maryland">Maryland</option>
@@ -74,8 +74,10 @@
             <option value="New Jersey">New Jersey</option>
             <option value="New Mexico">New Mexico</option>
             <option value="New York">New York</option>
-            <option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option>
-            <option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Northern Marianas Islands">Northern Marianas Islands</option>
+            <option value="Ohio">Ohio</option>
             <option value="Oklahoma">Oklahoma</option>
             <option value="Oregon">Oregon</option>
             <option value="Pennsylvania">Pennsylvania</option>
@@ -98,12 +100,22 @@
         </div>
       </div><br><br>
       <div class="weather-wrapper">
-        <div class="weather-column">
+        <!-- <div class="weather-column">
           <br><br><img id="image" src="images/sun-cloud.png">
-        </div>
+        </div> -->
         <div id="weatherOutput" class="weather-column">
           <ul id="displayWeatherUL"></ul>
         </div> 
+      </div>
+      <div class="zodiac-or-weather-banner">
+        <!-- Photo by Reza Shayestehpour on Unsplash.com -->
+        <img src="images/rain.jpg" class="zodiac-or-weather-image" alt="rain on water" />
+        <!-- Photo by Sara Kurfess on Unsplash.com -->
+        <img src="images/sun.jpg" class="zodiac-or-weather-image" alt="sunset over a field, taken at a low angle" />
+        <!-- Photo by Raychel Sanner on Unsplash.com -->
+        <img src="images/clouds.jpg" class="zodiac-or-weather-image" alt="cloudy sky over country road" />
+        <!-- Photo by Fabian Mardi on Unsplash.com -->
+        <img src="images/snow.jpg" class="zodiac-or-weather-image" alt="cabin in a snow-covered valley" />
       </div>
     </div>
   </main>
