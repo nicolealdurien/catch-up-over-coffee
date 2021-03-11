@@ -86,6 +86,7 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
     list-style-type: none;
+    padding-inline-start: 109px;
     
 }
 
@@ -261,6 +262,10 @@ li {
     margin: auto;
 }
 
+#horoscopeForToday {
+    text-align:center ;
+}
+
 /* Styling for Nutrition Page */
 
 #nutritionFactsUL {
@@ -288,7 +293,9 @@ li {
     #horoscope-page-title {
         font-size: 3.5rem; 
     }
+    
 }
+
 
 /* Styling for Affirmations Section */
 #affirmationsDisplayUL{
@@ -310,4 +317,5 @@ li {
     margin-right: auto;
     width: 50%;
 }
+
 

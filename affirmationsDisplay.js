@@ -11,7 +11,8 @@ function displayAffirmations() {
         
         let affirmationsItem= `
                                 <h2 id="affirmationsItems">
-                                <b>Daily Affirmation:&nbsp;&nbsp;</b>
+                                <b>-Daily Affirmation- &nbsp;&nbsp;</b>
+                                <br>
                                 <i>${affirmations.affirmation}</i> 
                                 </h2>
                                 `
