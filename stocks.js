@@ -202,7 +202,7 @@ function searchsymbol() {
                `
             symboldisplay.innerHTML = symboldiv
         })
-
+    companynametextbox.value = ""
 }
 
 // GET THE QUOTES FROM API FOR ENTERED SYMBOL
@@ -226,21 +226,25 @@ function showstockquotes() {
             .then((response) => {
                 return response.json()
             }).then((json) => {
-                stockquotesdiv = `
+                stockquotesdiv = `<br><br>
                     <div id="stockquotesdiv">
-                    <div class="bannerquotesboxcompanysymbol"> ${stock}</div>
-                    <div class="quotesbox">
-                    Current Price:   ${json.c}<br><br>
-                    Today's High:  ${json.h}<br><br>
-                    Today's Low: ${json.l}<br><br>
-                    Today's Open Price: ${json.o}<br><br>
-                    Previous Close Price: ${json.pc}<br></div>                
-                    <a href="#quotesbox" onclick="showcompanysdetails('${stock}')" class="button">Get More Details</a><br>
-                    </div>
+                      <div class="bannerquotesboxcompanysymbol"> ${stock} </div>
+                      <div id="companyDetailsLink">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#quotesbox" onclick="showcompanysdetails('${stock}')" class="companyDetailsButton">Get More Details About Company</a><br>
+                      </div>
+                      <div class="quotesbox">
+                      Current Price:   ${json.c}<br><br>
+                      Today's High:  ${json.h}<br><br>
+                      Today's Low: ${json.l}<br><br>
+                      Today's Open Price: ${json.o}<br><br>
+                      Previous Close Price: ${json.pc}<br>                
+                      </div>
+                    </div><br>
                     `
                 stocksdisplay.insertAdjacentHTML('beforeend', stockquotesdiv)
             })
     }
+    stocksymboltextbox.value = ""
 }
 
 
@@ -254,18 +258,21 @@ function refreshstockquotes() {
                 .then((response) => {
                     return response.json()
                 }).then((json) => {
-                    stockquotesdiv = `
-                        <div id="stockquotesdiv">
-                        <div class="bannerquotesboxcompanysymbol"> ${stock}</div>
-                        <div class="quotesbox">
-                        Current Price:   ${json.c}<br><br>
-                        Today's High:  ${json.h}<br><br>
-                        Today's Low: ${json.l}<br><br>
-                        Today's Open Price: ${json.o}<br><br>
-                        Previous Close Price: ${json.pc}<br></div>
-                        <a href="#quotesbox" onclick="showcompanysdetails('${stock}')" class="button">Get More Details</a><br>
-                       </div>
-                       `
+                    stockquotesdiv = `<br><br>
+                    <div id="stockquotesdiv">
+                      <div class="bannerquotesboxcompanysymbol"> ${stock} </div>
+                      <div id="companyDetailsLink">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#quotesbox" onclick="showcompanysdetails('${stock}')" class="companyDetailsButton">Get More Details About Company</a><br>
+                      </div>
+                      <div class="quotesbox">
+                      Current Price:   ${json.c}<br><br>
+                      Today's High:  ${json.h}<br><br>
+                      Today's Low: ${json.l}<br><br>
+                      Today's Open Price: ${json.o}<br><br>
+                      Previous Close Price: ${json.pc}<br>                
+                      </div>
+                    </div><br>
+                    `
                     stocksdisplay.insertAdjacentHTML('beforeend', stockquotesdiv)
                 })
         }
@@ -280,13 +287,14 @@ function showcompanysdetails(companysymbol) {
         }).then((json) => {
             let companydetaildiv = `<br>
                 <div>
+                <h1><u>Company Details</u></h1>
                 <img id="companyimg" src="${json.logo}">
                 </div><br>
                 <div class="quotesbox">
                 Company Name: ${json.name}<br><br>
                 Industry: ${json.finnhubIndustry}<br><br>
                 Website: <a href="${json.weburl}" class="stocks-link" target="blank" id="company-link">${json.weburl}</a><br>
-                </div>
+                </div><br>
                 `
         displaycompanydetail.innerHTML = companydetaildiv;
         })

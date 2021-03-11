@@ -36,6 +36,7 @@
     font-size: 20px;
     letter-spacing: 2px;
     width: 290px;
+    height: 255px;
     color: white;
     background: black;
     margin-left: 10px;
@@ -77,4 +78,17 @@ button {
 .stocks-link:visited {
     background-color: black;
     color: purple;
+}
+
+.companyDetailsButton {
+
+    background-color: #a520da;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    margin: .5rem;
 }
