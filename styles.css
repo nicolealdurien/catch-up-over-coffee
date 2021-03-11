@@ -59,13 +59,13 @@ a:hover {
 .header > h1 {
     font-size: 4rem;
     padding-bottom: 1rem;
-    background-color: rgba(0, 0, 0, .3);
+    /* background-color: rgba(0, 0, 0, .3); */
 }
 
 .header > article > p {
     font-size: 1.5rem;
     font-weight: 200;
-    background-color: rgba(0, 0, 0, .3);
+    /* background-color: rgba(0, 0, 0, .3); */
 }
 
 .header > article > a {
@@ -83,7 +83,7 @@ a:hover {
 
 .cards>ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 560px));
     grid-gap: 1rem;
     list-style-type: none;
     
