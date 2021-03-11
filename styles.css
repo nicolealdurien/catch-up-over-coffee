@@ -278,17 +278,7 @@ li {
     font-size: 1.75rem;
 }
 
-/* Styling for Mobile Devices */
 
-@media screen and (max-width: 375px) {
-    .cards>ul {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }    
-
-    #horoscope-page-title {
-        font-size: 3.5rem; 
-    }
-}
 
 /* Styling for Affirmations Section */
 #affirmationsDisplayUL{
@@ -311,3 +301,18 @@ li {
     width: 50%;
 }
 
+/* Styling for Mobile Devices */
+
+@media screen and (max-width: 375px) {
+    .cards>ul {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }    
+
+    #horoscope-page-title {
+        font-size: 3.5rem; 
+    }
+
+    .content-wrapper {
+        padding: 10px
+    }
+}
