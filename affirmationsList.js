@@ -36,7 +36,7 @@ const affirmationsList = [
         "affirmation":"If everything was easy, you'd be bored.",
     },
     {    "id": 13,
-        "affirmation": "I admire you for taking this on",
+        "affirmation": "You are admirable for taking this on.",
     },
     {    "id": 14,
         "affirmation": "You are resourceful and clever.",

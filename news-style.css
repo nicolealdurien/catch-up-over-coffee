@@ -7,7 +7,7 @@
   box-shadow: 1px 1px 2px 1px black
 }
 
-  .news-subheader-photo {
+.news-subheader-photo {
     border-radius: 15%;
     height: 200px;
     width: 250px;
@@ -17,3 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#allNewsUL > li {
+  text-align: left;
+}

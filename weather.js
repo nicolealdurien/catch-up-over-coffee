@@ -57,14 +57,13 @@ function geoFindMe() {
     function success(position) {
         const lat = position.coords.latitude;
         const long = position.coords.longitude;
-        console.log(lat)
-        console.log(long)
 
         fetch(`https://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${long}&cnt=1&units=imperial&appid=829ea0216deb875e615d6f69f6226188`)
             .then((response) => {
                 return response.json()
             })
             .then((weather) => {
+                console.log(weather)
                 weather = weather.list[0]
                 displayCurrentWeather(weather)
             })
