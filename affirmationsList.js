@@ -1,150 +1,140 @@
-
 const affirmationsList = [
-    {   
-        "affirmation":   "You got this"
+    {   "id": 1,
+        "affirmation": "You got this!"
     },
-    {
-        "affirmation": "You'll figure it out"
+    {   "id": 2,
+        "affirmation": "You'll figure it out."
     },
-    {
-
-        "affirmation": "You're a smart cookie"
+    {    "id": 3,
+        "affirmation": "You're a smart cookie."
     },
-    {
-        "affirmation": "I believe in you"
+    {    "id": 4,
+        "affirmation": "Your mind is full of brilliant ideas."
     },
-    {
-        "affirmation": "Sucking at something is the first step towards being good at something"
+    {    "id": 5,
+        "affirmation": "Sucking at something is the first step towards being good at something."
     },
-    {
-        "affirmation":  "Everything has cracks - that's how the light gets in"
+    {    "id": 6,
+        "affirmation":  "Everything has cracks - that's how the light gets in!"
     },
-    {
-        "affirmation":  "Mistakes don't make you less capable"
+    {    "id": 7,
+        "affirmation":  "Mistakes don't make you less capable."
     },
-    {
-        "affirmation":  "We are all works in progress"
+    {    "id": 8,
+        "affirmation":  "We are all works in progress."
     },
-    {
-        "affirmation":  "You are a capable human"
+    {    "id": 9,
+        "affirmation":  "You are a capable human."
     },
-    {
-        "affirmation":  "You know more than you think"
+    {    "id": 10,
+        "affirmation":  "You know more than you think."
     },
-
-    {
-        "affirmation": "10x engineers are a myth",
+    {    "id": 11,
+        "affirmation": "Give yourself space to grow and learn.",
     },
-    {
-        "affirmation":"If everything was easy you'd be bored",
+    {    "id": 12,
+        "affirmation":"If everything was easy, you'd be bored.",
     },
-    {
+    {    "id": 13,
         "affirmation": "I admire you for taking this on",
     },
-    {
-        "affirmation": "You're resourceful and clever",
+    {    "id": 14,
+        "affirmation": "You are resourceful and clever.",
     },
-    {
-        "affirmation": "You'll find a way",
+    {    "id": 15,
+        "affirmation": "You will find a way.",
     },
-    
-    {
-        "affirmation": "I know you'll sort it out",
+    {    "id": 16,
+        "affirmation": "You are becoming closer to your true self every day.",
     },
-    {
-        "affirmation":  "Struggling means you're learning",
+    {    "id": 17,
+        "affirmation":  "Struggling means you're learning.",
     },
-    {
-        "affirmation":  "You're doing a great job",
+    {    "id": 18,
+        "affirmation":  "You're doing a great job.",
     },
-    {
+    {    "id": 19,
         "affirmation":  "It'll feel magical when it's working",
     },
-    {
-        "affirmation": "I'm rooting for you",
+    {    "id": 20,
+        "affirmation": "You have more people rooting for your success than you know.",
     },
-    {
+    {    "id": 21,
         "affirmation": "You make a difference in the world by simply existing in it",
     },
-    {
-        "affirmation":"Your mind is full of brilliant ideas",
+    {    "id": 22,
+        "affirmation":"Trust that you are on the right path.",
     },
-    {
-        "affirmation":"You make a difference in the world by simply existing in it",
+    {    "id": 23,
+        "affirmation":"You are learning valuable lessons from yourself every day.",
     },
-    {
-        "affirmation":"You are learning valuable lessons from yourself every day",
+    {    "id": 24,
+         "affirmation":"You are worthy and deserving of respect.",
     },
-    {
-         "affirmation":"You are worthy and deserving of respect",
+    {    "id": 25,
+        "affirmation": "You know more today than you knew yesterday.",
     },
-    {
-        "affirmation": "You know more than you knew yesterday",
+    {    "id": 26,
+        "affirmation":"You are an inspiration.",
     },
-    {
-        "affirmation":"You're an inspiration",
+    {    "id": 27,
+        "affirmation":"Your life is already a miracle of chance waiting for you to shape its destiny.",
     },
-    {
-        "affirmation":"Your life is already a miracle of chance waiting for you to shape its destiny",
+    {    "id": 28,
+        "affirmation":"Your life is about to be incredible.",
     },
-    {
-        "affirmation":"Your life is about to be incredible",
-    },
-    {
+    {    "id": 29,
         "affirmation":"Nothing is impossible. The word itself says 'I’m possible!'",
     },
-    {
-        "affirmation":"Failure is just another way to learn how to do something right",
+    {   "id": 30,
+        "affirmation":"Failure is just another way to learn how to do something right.",
     },
-    
-    {
-        "affirmation":"I give myself permission to do what is right for me",
+    {   "id": 31,
+        "affirmation":"Give yourself permission to do what is right for you.",
     },
-    {
-        "affirmation":"You can do it",
+    {    "id": 32,
+        "affirmation":"Life is not a sprint; it's a marathon. Take it one step at a time.",
     },
-    {
-      "affirmation":"It is not a sprint, it is a marathon. One step at a time",
+    {    "id": 33,
+        "affirmation":"Success is the progressive realization of a worthy goal.",
     },
-    {
-        "affirmation":"Success is the progressive realization of a worthy goal",
+    {    "id": 34,
+        "affirmation":"People with goals succeed because they know where they’re going.",
     },
-    {
-        "affirmation":"People with goals succeed because they know where they’re going",
+    {    "id": 35,
+        "affirmation": "All you need is the plan, the roadmap, and the courage to press on to your destination.",
     },
-    {
-        "affirmation": "All you need is the plan, the roadmap, and the courage to press on to your destination",
+    {    "id": 36,
+        "affirmation": "The opposite of courage in our society is not cowardice...it is conformity.",
     },
-    {
-        "affirmation": "The opposite of courage in our society is not cowardice... it is conformity",
+    {    "id": 37,
+        "affirmation": "Whenever we’re afraid, it’s because we don’t know enough. If we understood enough, we would never be afraid.",
     },
-    {
-        "affirmation": "Whenever we’re afraid, it’s because we don’t know enough. If we understood enough, we would never be afraid",
+    {    "id": 38,
+        "affirmation": "The past does not equal the future.",
     },
-    {
-        "affirmation": "The past does not equal the future",
+    {    "id": 39,
+        "affirmation":"The path to success is to take massive, determined action.",
     },
-    {
-        "affirmation":"The path to success is to take massive, determined action",
+    {    "id": 40,
+        "affirmation":"It’s what you practice in private that you will be rewarded for in public.",
     },
-    {
-        "affirmation":"It’s what you practice in private that you will be rewarded for in public",
+    {    "id": 41,
+        "affirmation":"Small progress is still progress, and worth celebrating.",
     },
-    {
-        "affirmation":"Small progress is still progress",
+    {    "id": 42,
+        "affirmation":"Don't worry if you find flaws in your past creations; it's because you've evolved.",
     },
-    {
-        "affirmation":"Don't worry if you find flaws in your past creations, it's because you've evolved",
+    {    "id": 43,
+        "affirmation":"Starting is the most difficult step - but you can do it!",
     },
-    {
-        "affirmation":"Starting is the most difficult step - but you can do it",
+    {    "id": 44,
+        "affirmation":"Don't forget to enjoy the journey.",
     },
-    {
-        "affirmation":"Don't forget to enjoy the journey",
-    },
-    {
-        "affirmation":"It's not a mistake, it's a learning opportunity",
+    {    "id": 45,
+        "affirmation":"It's not a mistake, it's a learning opportunity.",
     },
     
 ]
-// source: https://github.com/annthurium/affirmations/blob/master/affirmations.js
+// sources: https://github.com/annthurium/affirmations/blob/master/affirmations.js
+// and https://theblissfulmind.com/positive-affirmations-list/

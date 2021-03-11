@@ -6,7 +6,7 @@ let exercises = [
     img_url:
       "https://www.dropbox.com/s/4m64ztxkj8a4dab/boatstraightlegs.svg?raw=1",
     description:
-      "To come into the pose, begin seated on the floor. Bend your knees, bringing the soles of the feet to the ground, and bring the palms to the back of the thighs. Begin to lean back as you shift your weight from your feet, eventually lifting the soles of the feet off the ground. Balance on the sitting bones, not leaning right back on to the tailbone. Lengthen the spine to broaden and lift the chest.",
+      "To come into the pose, begin seated on the floor. Bend your knees, bringing the soles of the feet to the ground, and bring the palms to the back of the thighs. Begin to lean back as you shift your weight from your feet, eventually lifting the soles of the feet off the ground. Balance on the sitting bones, not leaning back onto the tailbone. Lengthen the spine to broaden and lift the chest.",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ let exercises = [
     img_url: "https://www.dropbox.com/s/1nx0r94msxjwvyp/boatbentlegs.svg?raw=1",
     user_id: 1,
     description:
-      "From a seated position the hands are gripped around the back of the legs and the knees are bent in a 90 degree angle.  Both legs are pulled in towards the abdomen.  The core is engaged to maintain balance on the sits bones (be sure that the back does not round).  The front of the torso lengthens between the pubis and top of the sternum as the spine extends in both directions reaching up to the sky and rooting down to the earth.  The gaze is forward and Bandhas are engaged.",
+      "From a seated position, the hands are gripped around the back of the legs and the knees are bent in a 90-degree angle.  Both legs are pulled in towards the abdomen.  The core is engaged to maintain balance on the sits bones (be sure that the back does not round).  The front of the torso lengthens between the pubis and top of the sternum as the spine extends in both directions reaching up to the sky and rooting down to the earth.  The gaze is forward and Bandhas are engaged.",
   },
   {
     id: 3,

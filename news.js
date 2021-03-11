@@ -5,10 +5,11 @@ const btnSearchCategory = document.getElementById("btnSearchCategory")
 
 // Retrieve basic news object on page load and passes it to de-duplicator.
 function getNews() {
-fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en&countries=us,au,gb,in,nz,ie')
+fetch('http://api.mediastack.com/v1/news?access_key=7d6eba9ff9a6bfe61a590229bf6b92a2&languages=en')
     .then(response => {
         return response.json()      
     }).then(result => {
+        console.log(result)
         removeDupes(result)
     }).catch(error => {
         console.log(error);
@@ -32,7 +33,6 @@ function removeDupes(stories) {
             deDupedStories.push(story)
         }
     displayNews(deDupedStories)
-    console.log(deDupedStories)
     }
 }
 
