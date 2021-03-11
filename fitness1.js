@@ -2,6 +2,7 @@
 
 // const newPoseBtn = document.getElementById("newPoseBtn");
 const photoDIV = document.getElementById("photoDIV");
+const yogaFactHeader = document.getElementById("yogaFactHeader");
 
 function getNewPose() {
   let exercise = exercises[Math.floor(Math.random() * exercises.length)];
@@ -19,5 +20,17 @@ function getNewPose() {
   photoDIV.innerHTML = exerciseItem;
 }
 
-
 getNewPose();
+
+function getNewFact() {
+  yogaFactHeader.innerHTML = "";
+  let yogaFact = yogaFacts[Math.floor(Math.random() * yogaFacts.length)];
+  yogaFactHeader.innerHTML = yogaFact.fact;
+}
+
+getNewFact();
+
+
+let intervalId = window.setInterval(() => {
+  getNewFact();
+}, 8000);

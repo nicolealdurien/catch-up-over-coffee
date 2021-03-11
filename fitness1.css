@@ -30,4 +30,9 @@ footer {
   bottom: 0;
 }
 
-
+#yogaFactHeader {
+  text-align: center;
+  font-size: inherit;
+  color: goldenrod;
+  background-blend-mode: overlay;
+}
