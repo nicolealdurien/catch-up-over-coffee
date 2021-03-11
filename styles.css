@@ -143,6 +143,10 @@ footer {
 
 /* padding and mobile-shrinkage div styling for subpages */
 
+.content-wrapper {
+    padding: 20px
+}
+
 .search-container {
     max-width: 100%;
     display: flex;
@@ -277,8 +281,6 @@ li {
 }
 
 
-
-
 /* Styling for Affirmations Section */
 #affirmationsDisplayUL{
     text-align: center;
@@ -322,7 +324,7 @@ li {
 /* Styling for Larger Screens*/
 @media screen and (min-width: 376px) {
     .cards>ul {
-        
+        padding-inline-start: 109px;
     }
 
     .content-wrapper {
