@@ -1,6 +1,3 @@
-/* All current images/text/fonts/colors (except the header image) are just placeholders. This is just about building out the structure.*/
-
-
 /* Typography imported from Google Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
@@ -295,10 +292,7 @@ li {
     text-align: center;
     color:goldenrod;
     font-style: italic;
-    
-    
-    
-
+    padding: 15px;
 }
 
 /* Styling for Fitness Section */
