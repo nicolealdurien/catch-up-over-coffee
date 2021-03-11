@@ -83,6 +83,7 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 560px));
     grid-gap: 1rem;
     list-style-type: none;
+    padding-inline-start: 109px;
     
 }
 
@@ -259,6 +260,10 @@ li {
     margin: auto;
 }
 
+#horoscopeForToday {
+    text-align:center ;
+}
+
 /* Styling for Nutrition Page */
 
 #nutritionFactsUL {
@@ -275,6 +280,7 @@ li {
 #nutritionQuestionItems {
     font-size: 1.75rem;
 }
+
 
 
 
@@ -296,6 +302,9 @@ li {
     width: 50%;
 }
 
+
+
+=======
 /* Styling for Mobile Devices */
 
 @media screen and (max-width: 375px) {
@@ -307,7 +316,6 @@ li {
         font-size: 3.5rem; 
     }
 
-    .content-wrapper {
-        padding: 10px
-    }
+    
 }
+

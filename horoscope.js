@@ -30,7 +30,7 @@ horoscopebtn.addEventListener("click" , function() {
 function displayHoroscope(horoscopeAPI, sign) {
     
     let horoscopeItems = `<h3 id=horoscopeForToday>
-                           <u>Your Horoscope For ${horoscopeAPI.current_date}</u>
+                           <u><b>Your Horoscope For ${horoscopeAPI.current_date}<b></u>
                           <br>
                           <i>${horoscopeAPI.description}</i>
                           <br><br>
