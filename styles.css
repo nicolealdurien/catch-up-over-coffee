@@ -197,12 +197,17 @@ li {
 .weather-wrapper {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: center;
     flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto 
 }
 
+
 .weather-column {
-    flex: 1 1 0px;
+    flex: 1 1 0px;   
+    text-align: center; 
+    line-height: 1.6;
 }
 
 #displayWeatherUL {

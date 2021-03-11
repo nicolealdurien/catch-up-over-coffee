@@ -36,12 +36,12 @@ btnCityStateWeather.addEventListener("click", function() {
 // Display current weather after retrieval
 function displayCurrentWeather(weatherInCity) {
     let cityWeatherItem = `
-                            <h2><u>Today's Weather in  ${weatherInCity.name}</u></h2>
+                            <h3><u>Today's Weather in  ${weatherInCity.name}</u></h3>
                             Current Temp:&nbsp;&nbsp;${weatherInCity.main.temp} &#176;F
-                            <br><br>
-                            Feels Like (After Wind Chill/Heat Index):&nbsp;&nbsp;${weatherInCity.main.feels_like} &#176;F<br><br>
-                            Humidity:&nbsp;&nbsp;${weatherInCity.main.humidity}%<br><br>
-                            Today's Low:&nbsp;&nbsp;${weatherInCity.main.temp_min} &#176;F<br><br>
+                            <br>
+                            Feels Like (After Wind Chill/Heat Index):&nbsp;&nbsp;${weatherInCity.main.feels_like} &#176;F<br>
+                            Humidity:&nbsp;&nbsp;${weatherInCity.main.humidity}%<br>
+                            Today's Low:&nbsp;&nbsp;${weatherInCity.main.temp_min} &#176;F<br>
                             Today's High:&nbsp;&nbsp;${weatherInCity.main.temp_max} &#176F                            `
     displayWeatherUL.innerHTML = cityWeatherItem
     zipTextBox.value = ""
