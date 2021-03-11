@@ -10,18 +10,12 @@ function displayAffirmations() {
         let affirmations = affirmationsList[Math.floor(Math.random() * affirmationsList.length)]
         
         let affirmationsItem= `
-                              <h2 id="affirmationsItems">
-                             <i> ${affirmations.affirmation} <i> 
-                          
-                             
-                              </h2>
-        
-        
-        `
+                                <h2 id="affirmationsItems">
+                                <b>Daily Affirmation:&nbsp;&nbsp;</b>
+                                <i>${affirmations.affirmation}</i> 
+                                </h2>
+                                `
         affirmationsDisplay.innerHTML = affirmationsItem
-  
-
-
 }
 
 displayAffirmations()
@@ -29,7 +23,7 @@ displayAffirmations()
 function refreshAffirmationsDisplay() {
     let intervalid = window.setInterval(function() {
         displayAffirmations()
-    }, 10000)
+    }, 120000)
 }
 
 refreshAffirmationsDisplay()
