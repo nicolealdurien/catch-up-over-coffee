@@ -74,17 +74,16 @@ a:hover {
 /* cards styles for front page */
 
 .cards {
-    padding: .5rem;
+    /* padding: .5rem; */
     
 }
 
 .cards>ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 560px));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
     grid-gap: 1rem;
-    list-style-type: none;
-    padding-inline-start: 109px;
-    
+    list-style-type: none;   
+    padding-inline-start: 109px; 
 }
 
 .cards>ul>li {
@@ -143,10 +142,6 @@ footer {
 }
 
 /* padding and mobile-shrinkage div styling for subpages */
-
-.content-wrapper {
-    padding: 20px
-}
 
 .search-container {
     max-width: 100%;
@@ -261,7 +256,7 @@ li {
 }
 
 #horoscopeForToday {
-    text-align:center ;
+    text-align: center ;
 }
 
 /* Styling for Nutrition Page */
@@ -302,20 +297,38 @@ li {
     width: 50%;
 }
 
-
-
-=======
 /* Styling for Mobile Devices */
 
 @media screen and (max-width: 375px) {
     .cards>ul {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }    
+        grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+        padding: 25px;
 
     #horoscope-page-title {
         font-size: 3.5rem; 
     }
-
     
+    .cards>ul>li>p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 1rem .75rem;
+        color: #666666;
+    }
+    .content-wrapper {
+        padding: 10px
+    }
 }
 
+/* Styling for Larger Screens*/
+@media screen and (min-width: 376px) {
+    .cards>ul {
+        
+    }
+
+    .content-wrapper {
+        padding: 20px
+    }
+
+    .cards {
+        padding: .5rem;
+    }
