@@ -35,7 +35,7 @@ let nutritionQuiz = [
   {
     id: 6,
     question:
-      "True/False: A label that lists trans fats as '0' means that the food contains no trans fat.",
+      "True/False: A label that lists trans fats at 'zero' means that the food contains no trans fat.",
     answer:
       "False. Because of the way labeling regulations are worded, a 'trans-fat free' food may still contain small amounts of partially hydrogenated oil (<0.5g per serving). These trace amounts can add up, especially since standard serving sizes are often small.",
   },
@@ -44,7 +44,7 @@ let nutritionQuiz = [
     question:
       "Which fast food item has more sodium - McDonald's large fries, a Burger King veggie burger, or a Dunkin' Donuts corn muffin?",
     answer:
-      "the veggie burger! Most fast food is very high in sodium — even items you might think are not. The veggie burger has 900 mg, followed by the corn muffin at 770 mg. The fries come in a distant third at 290 mg.",
+      "It's the veggie burger! Most fast food is very high in sodium — even items you might think are not. The veggie burger has 900 mg, followed by the corn muffin at 770 mg. The fries come in a distant third at 290 mg.",
   },
   {
     id: 8,
