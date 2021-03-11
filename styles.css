@@ -9,6 +9,7 @@
 
 body {
     margin: 0;
+   
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,6 +78,7 @@ a:hover {
 
 .cards {
     padding: .5rem;
+    
 }
 
 .cards>ul {
@@ -84,11 +86,13 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
     list-style-type: none;
+    
 }
 
 .cards>ul>li {
     border: 1px solid #E2E2E2;
     border-radius: .5rem;
+    
 }
 
 .cards>ul>li>figure {
@@ -188,6 +192,7 @@ footer {
 
 li {
     list-style-type: none;
+    text-align: center;
 }
 
 
@@ -205,19 +210,23 @@ li {
 
 
 .weather-column {
+
     flex: 1 1 0px;   
     text-align: center; 
     line-height: 1.6;
+
 }
 
 #displayWeatherUL {
     font-size: 1.5rem;
+    
 }
 
 #weatherTitle {
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;    
+    text-align: center;
+      
 }
 
 /* Styling for Horoscope Page */
@@ -285,8 +294,8 @@ li {
 #affirmationsDisplayUL{
     text-align: center;
     color:goldenrod;
-   
     font-style: italic;
+    
     
     
 
