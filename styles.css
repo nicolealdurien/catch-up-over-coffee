@@ -303,7 +303,7 @@ li {
 
 @media screen and (max-width: 375px) {
     .cards>ul {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 280px));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
         padding: 25px;
 
     #horoscope-page-title {
@@ -319,6 +319,7 @@ li {
     .content-wrapper {
         padding: 10px
     }
+
 }
 
 /* Styling for Larger Screens*/
