@@ -397,3 +397,86 @@ let exercises = [
       "From Downward Dog pose, elevate one leg toward the sky and stack the corresponding hip over the other hip.  Bring the upper heel as close to the buttocks as possible.  The hips remain stacked; then bring the shoulders forward slowly over the hands.  Replace the corresponding hand to the upraised leg with the other hand and flip yourself over and extend the top hand forward.  The bottom foot is now facing toward the front of the mat and you remain on the ball of the top foot and the corresponding knee is bent.  Continue to lift hips up towards the sky and continue reaching the free hand towards the front of the room and slightly downwards.  Allow the head to curl back.",
   },
 ];
+
+let yogaFacts = [
+  {
+    fact:
+      "By rule, after every 30 minutes of yoga asana practice, you must allocate 5 minutes of rest for your body.",
+  },
+  {
+    fact:
+      "Recent studies have proven that Yoga is an effective tool for combating back pain! The studies were conducted in the western world but the Indians already knew about it thousands of years ago.",
+  },
+  {
+    fact:
+      "Males who practice Yoga are called Yogis. The females who practice Yoga are called Yoginis.",
+  },
+  {
+    fact:
+      "Yoga involves slow rhythmic breathing. The reason for this is that the ancient yogis used to think that we humans have a limited number of breaths in our lives, and that slow and deep breaths can help us extend our life.",
+  },
+  {
+    fact:
+      "Yoga is considered as one of the world’s oldest physical disciplines.",
+  },
+  {
+    fact:
+      "‘Yuj’ – the Vedic Sanskrit root word is the source of the word ‘yoga’. Yuj means ‘to unite’ or ‘to join.",
+  },
+  {
+    fact:
+      " Rhythmic breathing in Yoga elevates mood. In case you did not know, breath is an indicator of mood.",
+  },
+  {
+    fact:
+      "In Malaysia, Yoga has been banned among Muslims. They are not allowed to practice Yoga because it is believed that the practice of Yoga is against the core philosophy of Islam.",
+  },
+  {
+    fact:
+      "There is an International Yoga Day. It is celebrated on the 21st of June every year.",
+  },
+  {
+    fact:
+      "The age group of the most active Yoga practitioners in the USA is 30-49 years. This group also makes up 43% of all Yoga practitioners in the country.",
+  },
+  {
+    fact:
+      "It is a proven fact that people practicing Yoga have a longer lifespan compared to those who do not practice Yoga. Deep and slow breathing helps to expand the lungs and aids the heart.",
+  },
+  {
+    fact:
+      "Males experience an improvement in their sexual performance by practicing what is known as Gaurasana or the Eagle pose.",
+  },
+  {
+    fact:
+      "Yoga helps in retaining the vitality in your body along with keeping it fit. It motivates you towards healthy eating and improves the metabolic system of the body.",
+  },
+  {
+    fact:
+      "Yoga could help in strengthening weak muscles of the body. It helps in toning which prevents frequent straining of the muscles.",
+  },
+  {
+    fact:
+      "Yoga not only helps in lowering blood sugar but also lowers bad cholesterol and boosts good cholesterol. It encourages weight loss and improves the body’s sensitivity to insulin.",
+  },
+  {
+    fact:
+      "Practicing yoga would help you explore a different side of yourself. It would make you feel good about yourself and helps you take a positive approach in life.",
+  },
+  {
+    fact:
+      "Yoga helps in reducing stress and creates a routine which in turn makes a regular sleeping pattern. A relaxed body gets a deeper and more peaceful sleep.",
+  },
+  {
+    fact:
+      "A lot of breathing exercises are said to improve lung function. Doing such exercises in a long run could cure respiratory problems. It also increases the capacity of your lungs.",
+  },
+  {
+    fact:
+      "Increased flexibility and strength can help prevent the causes of some types of back pain. Many people who have back pain spend a lot of time sitting at a computer or driving a car, which causes tightness throughout the body and spinal compression. Yoga counteracts these conditions.",
+  },
+  {
+    fact:
+      "Yoga improves blood circulation. By transporting nutrients and oxygen throughout your body, yoga practice provides healthier organs, skin, and brain.",
+  },
+];
