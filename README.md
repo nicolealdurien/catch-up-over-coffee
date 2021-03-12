@@ -6,7 +6,7 @@
 
 Home page: Displays daily affirmation and all pages including fitness, nutrition , news, horoscopes, weather, and stocks.
 
-News: The app utilizes the MediaStack API to present the user with general news headlines and allow them to search for news stories by category (e.g. business news), keyword (e.g. "covid"), or news source (e.g., CNN).The information that is displayed includes: title , description and source.
+News: The app utilizes the MediaStack API to present the user with general news headlines and allow them to search for news stories by category (e.g. business news), keyword (e.g. "covid"), or news source (e.g., CNN).Displays current news events happening world-wide and keeps the user updated with most recent events. The information that is displayed includes: title , description and source.
 
 Weather: The app utilizes the OpenWeatherMap API to present the user with current local weather based on geolocation. Weather search options by ZIP code or by city/state are offered for those who do not have location services enabled. The weather page also links to the National Weather Service radar map. The information that is displayed includes todays: temperature , low temperature , high temperature , chill/heat index and humidity.
 
@@ -21,13 +21,14 @@ Fitness: The app utilizes Rebecca Estes yoga API found on github with supplement
 Nutrition: The app utilizes a created dictionary to present the nutiriton fact with a photo of the relevant fact topic. Their is a 'Test your Knowledge'section that is a mini quiz for user to take on a topic. They can take a few seconds to come up with an answer then click get answer to see how correct they were. The answer includes a detailed explanation of why it is correct to further enhance the users knowledge.
 
 * **Features:**
-Geolocaiton tracking
-Stock quote displaying in real time
+Geolocation tracking
+Stock quote displaying market in real time
 Daily affirmations more than 20 examples
 Yoga pose excercises more than 30 examples
-Updated Daily horoscope readings
-Track weather using zipcode or city in real time 
-Nutrition facts and quizes that provide nutriton education
+Horoscope readings updated daily 
+Weather tracking using zipcode or city name in real time 
+Nutrition facts and quizes that provide nutrition education
+Provides updates on current news events happening internaitonally
 
 * **Languages Used:**
 HTML, Javascript , CSS
@@ -37,13 +38,13 @@ APIs, bootstrap, VScode (editor), surge (deployment website)
 
 * **Challanges/Solutions:**
 Being able to use News API and geotracking location without security conflicts. 
----Solution: Copied direct paths and used links for accurate navigating between webpages
+---Solution: Copied direct paths and used links for accurate navigating between webpages.
 
 Accessing API keys that gives limited access on how many hits the website can have.
----Solution: Memebers created their own API keys to use incase of limitation reached for day
+---Solution: Memebers created their own API keys to use incase of limitation reached for day.
 
 Not finding a suitable API key for 2 of our areas.
----Solution: Created our own array and populated with informaiton to use in webpage
+---Solution: Created our own array and populated with informaiton to use in webpage.
 
 Being able to make site mobile friendly and features of application viewable on all devices.
 
@@ -59,7 +60,7 @@ News API:https://mediastack.com/
 
 * **Installation:**
 Used VS code as code editor can downlaod here: https://code.visualstudio.com/
-Download and create an account to start editing
+Download and create an account to start editing.
 
 Reference Bootstrap info here: https://github.com/twbs/bootstrap
 
