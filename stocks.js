@@ -123,7 +123,7 @@ let intervalId3 = window.setInterval(function() {
 
 
 // FOR AMAZON.COM INC
-fetch(`https://finnhub.io/api/v1/quote?symbol=MSFT&token=c135c0n48v6rj20a8qpg`)
+fetch(`https://finnhub.io/api/v1/quote?symbol=AMZN&token=c135c0n48v6rj20a8qpg`)
     .then((response) => {
         return response.json()
     }).then((json) => {
