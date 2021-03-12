@@ -42,7 +42,7 @@ Being able to use News API and geotracking location without security conflicts.
 Accessing API keys that gives limited access on how many hits the website can have.
 ---Solution: Memebers created their own API keys to use incase of limitation reached for day
 
-Not funding a suitable API key for 2 of our areas.
+Not finding a suitable API key for 2 of our areas.
 ---Solution: Created our own array and populated with informaiton to use in webpage
 
 Being able to make site mobile friendly and features of application viewable on all devices.
