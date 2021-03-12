@@ -413,11 +413,11 @@ let yogaFacts = [
   },
   {
     fact:
-      " Rhythmic breathing in Yoga elevates mood. In case you did not know, breath is an indicator of mood.",
+      " Rhythmic breathing in Yoga elevates mood.",
   },
   {
     fact:
-      "In Malaysia, Yoga has been banned among Muslims. They are not allowed to practice Yoga because it is believed that the practice of Yoga is against the core philosophy of Islam.",
+      "In Malaysia, Yoga has been banned among Muslims. It is believed to be against the core philosophy of Islam.",
   },
   {
     fact:
@@ -429,11 +429,7 @@ let yogaFacts = [
   },
   {
     fact:
-      "It is a proven fact that people practicing Yoga have a longer lifespan compared to those who do not practice Yoga. Deep and slow breathing helps to expand the lungs and aids the heart.",
-  },
-  {
-    fact:
-      "Males experience an improvement in their sexual performance by practicing what is known as Gaurasana or the Eagle pose.",
+      "People practicing Yoga have been shown to have a longer lifespan compared to those who do not practice. Deep and slow breathing helps to expand the lungs and aid the heart.",
   },
   {
     fact:
@@ -441,7 +437,7 @@ let yogaFacts = [
   },
   {
     fact:
-      "Yoga could help in strengthening weak muscles of the body. It helps in toning which prevents frequent straining of the muscles.",
+      "Yoga helps in strengthening weak muscles of the body and preventing muscle strain."
   },
   {
     fact:

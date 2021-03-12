@@ -11,10 +11,9 @@ function getNewPose() {
                         <div id="fitnessDisplay">
                         <h1>  ${exercise.english_name} Pose</h1>
                         <h2>  Sanskrit: ${exercise.sanskrit_name}</h2>
-                        <img src="${exercise.img_url}" width="50%" height="25%" class="exerciseImage" /><br><br>
+                        <img src="${exercise.img_url}" width="50%" height="25%" class="exerciseImage" alt="stick figure doing yoga pose"/><br><br>
                         <button onclick=getNewPose() class="newPoseBtn">Get New Pose</button>
                         <h3><b>How to achieve pose:</b></h3>  <p><b>${exercise.description}<b></p>
-                        
                         </div>
                         `;
   photoDIV.innerHTML = exerciseItem;
@@ -33,4 +32,4 @@ getNewFact();
 
 let intervalId = window.setInterval(() => {
   getNewFact();
-}, 8000);
+}, 25000);
