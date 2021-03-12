@@ -397,7 +397,7 @@ let yogaFacts = [
   },
   {
     fact:
-      "Males who practice Yoga are called Yogis. The females who practice Yoga are called Yoginis.",
+      "Men who practice Yoga are called Yogis. Women who practice Yoga are called Yoginis.",
   },
   {
     fact:
