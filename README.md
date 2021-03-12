@@ -61,13 +61,10 @@ News API:https://mediastack.com/
 * **Installation:**
 Used VS code as code editor can downlaod here: https://code.visualstudio.com/
 Download and create an account to start editing.
-
 Reference Bootstrap info here: https://github.com/twbs/bootstrap
-
 Used surge to deploy website: https://surge.sh/
 First, ensure you have a recent version of Node.js download here: https://nodejs.org/en/
 Used recommended for most users option.
-
 Then, install Surge using npm by running the following command: npm install --global surge. 
 You may need to preface this command with sudo.
 Then, run surge from within any directory folder, to publish that directory onto the web.
