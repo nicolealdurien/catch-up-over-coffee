@@ -62,7 +62,7 @@ let intervalId1 = window.setInterval(function() {
                        `
             fbstockdisplay.innerHTML = stockquotesdiv
         })
-}, 6000)
+}, 60000)
 
 
 // FOR ALPHABET INC
@@ -90,7 +90,7 @@ let intervalId2 = window.setInterval(function() {
                        `
             googlestockdisplay.innerHTML = stockquotesdiv
         })
-}, 6000)
+}, 60000)
 
 
 // FOR MICROSOFT INC
@@ -118,7 +118,7 @@ let intervalId3 = window.setInterval(function() {
                        `
             microsoftstockdisplay.innerHTML = stockquotesdiv
         })
-}, 6000)
+}, 60000)
 
 
 
@@ -147,7 +147,7 @@ let intervalId4 = window.setInterval(function() {
                        `
             amazonstockdisplay.innerHTML = stockquotesdiv
         })
-}, 6000)
+}, 60000)
 
 
 // FOR TESLA INC
@@ -175,7 +175,7 @@ let intervalId5 = window.setInterval(function() {
                        `
             teslastockdisplay.innerHTML = stockquotesdiv
         })
-}, 6000)
+}, 60000)
 
 
 
@@ -296,7 +296,7 @@ function showcompanysdetails(companysymbol) {
                 Website: <a href="${json.weburl}" class="stocks-link" target="blank" id="company-link">${json.weburl}</a><br>
                 </div><br>
                 `
-        displaycompanydetail.innerHTML = companydetaildiv;
+            displaycompanydetail.innerHTML = companydetaildiv;
         })
 
 }
