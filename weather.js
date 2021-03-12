@@ -60,6 +60,7 @@ function geoFindMe() {
 
         fetch(`https://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${long}&cnt=1&units=imperial&appid=829ea0216deb875e615d6f69f6226188`)
             .then((response) => {
+                console.log(response)
                 return response.json()
             })
             .then((weather) => {

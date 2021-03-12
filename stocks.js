@@ -196,8 +196,8 @@ function searchsymbol() {
         }).then((json) => {
             symboldiv = `
                 <div>
-               <div class="quotesbox"> Company Name: ${json.result[0].description}</div>
-               <div class="quotesbox"> Stock Ticker Symbol: ${json.result[0].symbol} </div>
+               <div class="symbolbox"> Company Name: ${json.result[0].description}</div>
+               <div class="symbolbox"> Stock Ticker Symbol: ${json.result[0].symbol} </div>
                </div>
                `
             symboldisplay.innerHTML = symboldiv
@@ -290,7 +290,7 @@ function showcompanysdetails(companysymbol) {
                 <h1><u>Company Details</u></h1>
                 <img id="companyimg" src="${json.logo}">
                 </div><br>
-                <div class="quotesbox">
+                <div class="companydetailsbox">
                 Company Name: ${json.name}<br><br>
                 Industry: ${json.finnhubIndustry}<br><br>
                 Website: <a href="${json.weburl}" class="stocks-link" target="blank" id="company-link">${json.weburl}</a><br>

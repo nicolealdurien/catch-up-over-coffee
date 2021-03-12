@@ -32,6 +32,30 @@
     box-shadow: 1px 1px 2px 1px black
 }
 
+.symbolbox {
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 290px;
+    height: 40px;
+    color: white;
+    background: black;
+    margin-left: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 1px black
+}
+
+.companydetailsbox {
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 290px;
+    height: 160px;
+    color: white;
+    background: black;
+    margin-left: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 1px black
+}
+
 .quotesbox {
     font-size: 20px;
     letter-spacing: 2px;
