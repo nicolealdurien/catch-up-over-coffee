@@ -105,49 +105,49 @@ let exercises = [
     description:
       "The body is positioned in an inverted 'V' with the palms and feet rooted into the earth and sits bones lifted up towards the sky.  The arms and legs are straight.  The weight of the body is equally distributed between the hands and the feet.  The eye of the elbows face forward.  The ribcage is lifted and the heart is open.  Shoulders are squared to the earth and rotated back, down and inward.  The neck is relaxed and the crown of the head is toward the earth.  The gaze is down and slightly forward.",
   },
-  // {
-  //   id: 16,
-  //   sanskrit_name: "Garudasana",
-  //   english_name: "Eagle",
-  //   img_url: "https://www.dropbox.com/s/w05qgx7wyxva1y3/eagle.svg?raw=1",
-  //   description:
-  //     "From a standing position the one thigh is crossed over the other with the toes and/or the ankle hooked behind the lower calf.  The weight of the body is balanced on the standing foot.  The arms are crossed in front of the torso so that one arm is crossed above the other arm.  The top arm is tucked into the elbow crook of the bottom arm.  The hands are hooked around each other as well.  Once hooked, the elbows lift up and the fingers stretch towards the ceiling.  The gaze is soft and forward.",
-  // },
-  // {
-  //   id: 17,
-  //   sanskrit_name: "Utthita Hasta Padangusthasana",
-  //   english_name: "Extended Hand to Toe",
-  //   img_url:
-  //     "https://www.dropbox.com/s/0yk0z7f0a4ni37l/extendedhandtotoe.svg?raw=1",
-  //   description:
-  //     "From Tadasana, bring your left knee toward your belly. Reach your left arm inside the thigh, cross it over the front ankle, and hold the outside of your left foot. If your hamstrings are tight, hold a strap looped around the left sole. Firm the front thigh muscles of the standing leg, and press the outer thigh inward.",
-  // },
-  // {
-  //   id: 18,
-  //   sanskrit_name: "Utthita Parsvakonasana",
-  //   english_name: "Extended Side Angle",
-  //   img_url:
-  //     "https://www.dropbox.com/s/yzynxmyb9o7eras/extendedsideangle.svg?raw=1",
-  //   description:
-  //     "Reach your left arm up towards the ceiling, and then extend your arm over the top of your head. Your left bicep should be over your left ear, and your fingertips should be reaching in the same direction your front toes are pointing. Keep your chest, hips, and legs in one straight line, extended over your front leg.",
-  // },
-  // {
-  //   id: 19,
-  //   sanskrit_name: "Pincha Mayurasana",
-  //   english_name: "Forearm Stand",
-  //   img_url: "https://www.dropbox.com/s/kjlyju4m91qgoi6/forearmstand.svg?raw=1",
-  //   description:
-  //     "Push down strongly through your elbows and forearms, gently draw your low ribs in, and lengthen your tailbone toward your heels. Stay here for up to five breaths, then slowly release your legs to the ground, one at a time. Rest in Child's pose, and repeat the pose, leading with the opposite leg whenever you feel ready.",
-  // },
-  // {
-  //   id: 20,
-  //   sanskrit_name: "Uttanasana",
-  //   english_name: "Forward Bend with Shoulder Opener",
-  //   img_url:
-  //     "https://www.dropbox.com/s/sjqfq99pqpelv4v/forwardfoldshoulderstretch.svg?raw=1",
-  //   description:
-  //     "From a standing position, the body is folded over at the crease of the hip with the spine long.  The neck is relaxed and the crown of the head is towards the earth.  The feet are rooted into the earth with the toes actively lifted.  The spine is straight.  The ribcage is lifted.  The chest and the thighs are connected.  The sacrum lifts up toward the sky in dog tilt.  The fingertips are resting on the earth next to the toes.  The gaze is down or slightly forward.",
-  // },
+  {
+    id: 16,
+    sanskrit_name: "Garudasana",
+    english_name: "Eagle",
+    img_url: "images/eagle.svg",
+    description:
+      "From a standing position the one thigh is crossed over the other with the toes and/or the ankle hooked behind the lower calf.  The weight of the body is balanced on the standing foot.  The arms are crossed in front of the torso so that one arm is crossed above the other arm.  The top arm is tucked into the elbow crook of the bottom arm.  The hands are hooked around each other as well.  Once hooked, the elbows lift up and the fingers stretch towards the ceiling.  The gaze is soft and forward.",
+  },
+  {
+    id: 17,
+    sanskrit_name: "Utthita Hasta Padangusthasana",
+    english_name: "Extended Hand to Toe",
+    img_url:
+      "images/extendedhandtotoe.svg",
+    description:
+      "From Tadasana, bring your left knee toward your belly. Reach your left arm inside the thigh, cross it over the front ankle, and hold the outside of your left foot. If your hamstrings are tight, hold a strap looped around the left sole. Firm the front thigh muscles of the standing leg, and press the outer thigh inward.",
+  },
+  {
+    id: 18,
+    sanskrit_name: "Utthita Parsvakonasana",
+    english_name: "Extended Side Angle",
+    img_url:
+      "images/extendedsideangle.svg",
+    description:
+      "Reach your left arm up towards the ceiling, and then extend your arm over the top of your head. Your left bicep should be over your left ear, and your fingertips should be reaching in the same direction your front toes are pointing. Keep your chest, hips, and legs in one straight line, extended over your front leg.",
+  },
+  {
+    id: 19,
+    sanskrit_name: "Pincha Mayurasana",
+    english_name: "Forearm Stand",
+    img_url: "iamges/forearmstand.svg",
+    description:
+      "Push down strongly through your elbows and forearms, gently draw your low ribs in, and lengthen your tailbone toward your heels. Stay here for up to five breaths, then slowly release your legs to the ground, one at a time. Rest in Child's pose, and repeat the pose, leading with the opposite leg whenever you feel ready.",
+  },
+  {
+    id: 20,
+    sanskrit_name: "Uttanasana",
+    english_name: "Forward Bend with Shoulder Opener",
+    img_url:
+      "images/forwardfoldshoulderstretch.svg",
+    description:
+      "From a standing position, the body is folded over at the crease of the hip with the spine long.  The neck is relaxed and the crown of the head is towards the earth.  The feet are rooted into the earth with the toes actively lifted.  The spine is straight.  The ribcage is lifted.  The chest and the thighs are connected.  The sacrum lifts up toward the sky in dog tilt.  The fingertips are resting on the earth next to the toes.  The gaze is down or slightly forward.",
+  },
   // {
   //   id: 21,
   //   sanskrit_name: "Ardha Chandrasana",

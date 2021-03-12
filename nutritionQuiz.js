@@ -3,7 +3,7 @@ let nutritionQuiz = [
     id: 1,
     question: "Fatty fish is a good source of what nutrient?",
     answer:
-      "Omega-3s.Fatty fish such as salmon, sardines, halibut, and black cod provide omega-3 fats, which may reduce the risk of cardiovascular disease and other disorders.  It's best to get your omega-3s from fish rather than supplements; recent studies show diminshed absorption from omega-3 pills as compared to fish.",
+      "Omega-3s. Fatty fish such as salmon, sardines, halibut, and black cod provide omega-3 fats, which may reduce the risk of cardiovascular disease and other disorders.  It's best to get your omega-3s from fish rather than supplements; recent studies show diminished absorption from omega-3 pills as compared to fish.",
   },
   {
     id: 2,
