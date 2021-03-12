@@ -136,7 +136,7 @@ fetch(`https://finnhub.io/api/v1/quote?symbol=MSFT&token=c135c0n48v6rj20a8qpg`)
     })
 
 let intervalId4 = window.setInterval(function() {
-    fetch(`https://finnhub.io/api/v1/quote?symbol=MSFT&token=c135c0n48v6rj20a8qpg`)
+    fetch(`https://finnhub.io/api/v1/quote?symbol=AMZN&token=c135c0n48v6rj20a8qpg`)
         .then((response) => {
             return response.json()
         }).then((json) => {
