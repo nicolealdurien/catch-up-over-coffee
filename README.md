@@ -6,19 +6,22 @@ https://catch-up-over-coffee.surge.sh
 * **Purpose of the app:** <br/><br/>
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seamless transition, allowing the user to quickly and easily catch up on any new developments that occurred while they were sleeping, thus helping them to have a prepared and productive day!
 <br>
-<br>
 
 * **Description:** <br/><br/>
     Home page: Displays daily affirmation and directory for all subpages including fitness, nutrition, news, horoscopes, weather, and stocks.
 
-    News: Consumes [https://mediastack.com/documentation/](MediaStack API).<br/>
-    User is presented with general news stories on initial page loa; each story includes title, URL, news source, and story description.<br/>
+    News: Consumes [MediaStack API](https://mediastack.com/documentation/).<br/>
+    On initial page load, user is presented with general news stories. Each story includes title, URL, news source, and story description.<br/>
     Additional news search options/filtering include:<br/>
-    Search by category (e.g. business news)<br/>
-    Search by keyword (e.g. "covid")<br/>
-    Search by news source (e.g., CNN)<br/>
+    - Search by category (e.g. business news)<br/>
+    - Search by keyword (e.g. "covid")<br/>
+    - Search by news source (e.g., CNN)<br/>
 
-    Weather: The app utilizes the OpenWeatherMap API to present the user with current local weather based on geolocation. Weather search options by ZIP code or by city/state are offered for those who do not have location services enabled. The weather page also links to the National Weather Service radar map. The information that is displayed includes the current temperature, the day's low temperature, the expected high temperature, the current humidity, and the current "feels like" temperature after accounting for heat index/wind chill.
+    Weather: Consumes [OpenWeatherMap API](https://openweathermap.org/api).<br>
+    On initial page load, user is presented with current local weather based on geolocation. Weather displayed includes current temperature, low/high temps for the day, current humidity, and current "feels like" temperature after accounting for heat index/wind chill.
+    Additional search options/available information include:
+    - Weather search by ZIP or by city/state, for those who do not have location services enabled
+    - Lnks to the National Weather Service radar map
 
     Stocks: The app utilizes the Finnhub API to present the user with several pre-set stock quotes from well-known companies and also allow them to search for custom stock quotes. The quotes shown are always the most up-to-date value from the active market. If a user does not know their stock symbol, the page includes functionality to let them search by company name and get the stock symbol. Once a custom quote is displayed, the display includes a button to show further details about the company, including the company's logo, industry category and website. 
 
