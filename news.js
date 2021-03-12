@@ -9,7 +9,6 @@ fetch('http://api.mediastack.com/v1/news?access_key=369b8d9662e87a57ee008cecd6aa
     .then(response => {
         return response.json()      
     }).then(result => {
-        console.log(result)
         removeDupes(result)
     }).catch(error => {
         console.log(error);
