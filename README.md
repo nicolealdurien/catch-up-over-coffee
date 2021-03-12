@@ -3,7 +3,6 @@
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out      local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seemless transition into what information was updated while sleeping and helps the user have a prepared and productive day!
 
 * **Description:** 
-
 Home page: Displays daily affirmation and all pages including fitness, nutrition , news, horoscopes, weather, and stocks.
 
 News: The app utilizes the MediaStack API to present the user with general news headlines and allow them to search for news stories by category (e.g. business news), keyword (e.g. "covid"), or news source (e.g., CNN).Displays current news events happening world-wide and keeps the user updated with most recent events. The information that is displayed includes: title , description and source.
@@ -39,15 +38,11 @@ APIs, bootstrap, VScode (editor), surge (deployment website)
 * **Challanges/Solutions:**
 Being able to use News API and geotracking location without security conflicts. 
 ---Solution: Copied direct paths and used links for accurate navigating between webpages.
-
 Accessing API keys that gives limited access on how many hits the website can have.
 ---Solution: Memebers created their own API keys to use incase of limitation reached for day.
-
 Not finding a suitable API key for 2 of our areas.
 ---Solution: Created our own array and populated with informaiton to use in webpage.
-
 Being able to make site mobile friendly and features of application viewable on all devices.
-
 ---solution: adjusted padding to display evenly,saved images locally so they can be seen on mobile devices 
 and used media query to make mobile friendly.
 
