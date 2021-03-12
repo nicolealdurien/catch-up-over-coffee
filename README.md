@@ -9,27 +9,34 @@ https://catch-up-over-coffee.surge.sh
 
 * **Description:** <br/><br/>
     Home page: Displays daily affirmation and directory for all subpages including fitness, nutrition, news, horoscopes, weather, and stocks.
+    
+    Affirmations: The app utilizes a custom JSON document created by our project developers to present the affirmations on the home screen. An interval timer is used to periodically display a new affirmation on the screen.
 
     News: Consumes [MediaStack API](https://mediastack.com/documentation/).<br/>
     On initial page load, user is presented with general news stories. Each story includes title, URL, news source, and story description.<br/>
-    Additional news search options/filtering include:<br/>
+    Additional news search options/filtering:<br/>
     - Search by category (e.g. business news)<br/>
     - Search by keyword (e.g. "covid")<br/>
     - Search by news source (e.g., CNN)<br/>
 
-    Weather: Consumes [OpenWeatherMap API](https://openweathermap.org/api).<br>
+    Weather: Consumes [OpenWeatherMap API](https://openweathermap.org/current).<br>
     On initial page load, user is presented with current local weather based on geolocation. Weather displayed includes current temperature, low/high temps for the day, current humidity, and current "feels like" temperature after accounting for heat index/wind chill.
-    Additional search options/available information include:
+    Additional search options/available information:
     - Weather search by ZIP or by city/state, for those who do not have location services enabled
-    - Lnks to the National Weather Service radar map
+    - Links to the National Weather Service radar map
 
-    Stocks: The app utilizes the Finnhub API to present the user with several pre-set stock quotes from well-known companies and also allow them to search for custom stock quotes. The quotes shown are always the most up-to-date value from the active market. If a user does not know their stock symbol, the page includes functionality to let them search by company name and get the stock symbol. Once a custom quote is displayed, the display includes a button to show further details about the company, including the company's logo, industry category and website. 
+    Stocks: Consumes [Finnhub API](https://finnhub.io/docs/api).<br>
+    On initial page load, user is presented with a banner of pre-set stock quotes from well-known companies.
+    Additional search options/available information:
+    - Search by stock ticker symbol for custom quote
+    - Search by company name to get stock ticker symbol
+    - After custom quote is displayed, user can click a button to see the company's logo, industry, and website.
 
-    Horoscopes: The app utilizes the Aztro API to present the horoscopes with users. Their is a drop menu to choose your sign and for which day you want to get your horoscope details. A dispaly of each character that depicts the signs is shown on the page. The information that is displayed includes: discription of your day , mood , lucky color , lucky time and lucky number. 
+    Horoscopes: Consumes [Aztro API](https://aztro.readthedocs.io/en/latest/).<br>
+    Users select their sign and can choose whether to see that sign's horoscope for today, yesterday, or tomorrow. The displayed information includes the horoscope, mood for the day, lucky color, lucky time of day, and lucky number.
 
-    Affirmations: The app utilizes a created dictionary to present the affirmations on the home screen. A interval timer is used to show a new affirmation every 12 seconds to the user.
-
-    Fitness: The app utilizes Rebecca Estes yoga API found on github with supplemented descriptions added to it. The fitness page demostrates the name and sankrit name of the yoga poses. The image and descritption which explains how to achive the pose is displayed. Their is a button incoprorated that allows you to click and get another pose thus iterating through the API. A fitness fact is displayed at random above pose title and a time interval is set to show a new one every 12 seconds.
+    Fitness: The app utilizes a custom JSON document that 
+    sources its names and images from [Rebecca Estes' Yoga API](https://github.com/rebeccaestes/yoga_api), with descriptions and general yoga facts added by our project developers.  The fitness page demonstrates the name and sankrit name of the yoga poses. The image and descritption which explains how to achive the pose is displayed. Their is a button incoprorated that allows you to click and get another pose thus iterating through the API. A fitness fact is displayed at random above pose title and a time interval is set to show a new one every 12 seconds.
 
     Nutrition: The app utilizes a created dictionary to present the nutiriton fact with a photo of the relevant fact topic. Their is a 'Test your Knowledge'section that is a mini quiz for user to take on a topic. They can take a few seconds to come up with an answer then click get answer to see how correct they were. The answer includes a detailed explanation of why it is correct to further enhance the users knowledge.
 
