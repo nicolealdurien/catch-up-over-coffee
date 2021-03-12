@@ -5,17 +5,23 @@ https://catch-up-over-coffee.surge.sh
 
 * **Purpose of the app:** <br/><br/>
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seamless transition, allowing the user to quickly and easily catch up on any new developments that occurred while they were sleeping, thus helping them to have a prepared and productive day!
-<br><br>
+<br/>
+<br/>
 * **Description:** <br/><br/>
     Home page: Displays daily affirmation and directory for all subpages including fitness, nutrition, news, horoscopes, weather, and stocks.
 
-    News: The app utilizes the MediaStack API to present the user with general news headlines and allow them to search for news stories by category (e.g. business news), keyword (e.g. "covid"), or news source (e.g., CNN).Displays current news events happening world-wide and keeps the user updated with most recent events. The information that is displayed includes: title , description and source.
+    News: Consumes [https://mediastack.com/documentation/](MediaStack API).<br/>
+    User is presented with general news stories on initial page loa; each story includes title, URL, news source, and story description.<br/>
+    Additional news search options/filtering include:<br/>
+    Search by category (e.g. business news)<br/>
+    Search by keyword (e.g. "covid")<br/>
+    Search by news source (e.g., CNN)<br/>
 
     Weather: The app utilizes the OpenWeatherMap API to present the user with current local weather based on geolocation. Weather search options by ZIP code or by city/state are offered for those who do not have location services enabled. The weather page also links to the National Weather Service radar map. The information that is displayed includes the current temperature, the day's low temperature, the expected high temperature, the current humidity, and the current "feels like" temperature after accounting for heat index/wind chill.
 
-    Stocks: The app utilizes the Finnhub API to present the user with the preset stock quotes from well-known companies and allow them to search for custom stock quotes. The quotes shown are always the most up-to-date value from the active market. At the top of the page is a default heading that shows the top stocks and their active price. If a user does not know their stock symbol they can input what company they want to search and recieve the stock symbol. Their is also a option to get further detail of the stock if more than just the price is needed.The extended description feature provides the industry and website for further research.
+    Stocks: The app utilizes the Finnhub API to present the user with several pre-set stock quotes from well-known companies and also allow them to search for custom stock quotes. The quotes shown are always the most up-to-date value from the active market. If a user does not know their stock symbol, the page includes functionality to let them search by company name and get the stock symbol. Once a custom quote is displayed, the display includes a button to show further details about the company, including the company's logo, industry category and website. 
 
-    Horoscopes: The app utilizes a Aztro API to present the horoscopes with users. Their is a drop menu to choose your sign and for which day you want to get your horoscope details. A dispaly of each character that depicts the signs is shown on the page. The information that is displayed includes: discription of your day , mood , lucky color , lucky time and lucky number. 
+    Horoscopes: The app utilizes the Aztro API to present the horoscopes with users. Their is a drop menu to choose your sign and for which day you want to get your horoscope details. A dispaly of each character that depicts the signs is shown on the page. The information that is displayed includes: discription of your day , mood , lucky color , lucky time and lucky number. 
 
     Affirmations: The app utilizes a created dictionary to present the affirmations on the home screen. A interval timer is used to show a new affirmation every 12 seconds to the user.
 
@@ -51,11 +57,11 @@ Being able to make site mobile friendly and features of application viewable on 
 and used media query to make mobile friendly.
 
 * **API Reference:**
-Stock API: https://finnhub.io/
-Horoscope API: https://aztro.sameerkumar.website?sign=leo&day=today
-News API: https://mediastack.com/
-Weather API: https://openweathermap.org/api
 Fitness API: https://github.com/rebeccaestes/yoga_api
+Horoscope API: https://aztro.sameerkumar.website
+News API: https://mediastack.com/
+Stock API: https://finnhub.io/
+Weather API: https://openweathermap.org/api
 
 * **Installation:**
 Used VS code as code editor can downlaod here: https://code.visualstudio.com/
@@ -72,9 +78,11 @@ Then, run surge from within any directory folder, to publish that directory onto
 * **Developers:**
 [Nicole Aldurien](https://github.com/nicolealdurien), [Summer Johnson](https://github.com/SJ-CODES), [Neil Shah](https://github.com/neilshah101), [Mike Warren](https://github.com/mikewarren02)
 
+<br>
+<br>
 
 
-![](https://user-images.githubusercontent.com/71364408/110894150-5a4b8900-82c5-11eb-9e82-f0fdd932bab6.png)
+![](https://user-images.githubusercontent.com/71364408/110894177-66374b00-82c5-11eb-90ec-28a81e72a089.png)
 
 ![](https://user-images.githubusercontent.com/71364408/110894165-60da0080-82c5-11eb-86a5-f0cd5357d133.png)
 
@@ -82,4 +90,4 @@ Then, run surge from within any directory folder, to publish that directory onto
 
 ![](https://user-images.githubusercontent.com/71364408/110894171-65061e00-82c5-11eb-8859-b99c150e625f.png)
 
-![](https://user-images.githubusercontent.com/71364408/110894177-66374b00-82c5-11eb-90ec-28a81e72a089.png)
+
