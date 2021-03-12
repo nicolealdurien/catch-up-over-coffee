@@ -208,7 +208,6 @@ li {
 
 
 .weather-column {
-
     flex: 1 1 0px;   
     text-align: center; 
     line-height: 1.6;
@@ -225,6 +224,20 @@ li {
     font-weight: bold;
     text-align: center;
       
+}
+
+.weather-banner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+}
+
+.weather-image {
+    width: 200px;
+    height: 200px;
+    padding: .3rem;
 }
 
 /* Styling for Horoscope Page */
