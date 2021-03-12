@@ -1,7 +1,7 @@
 # Catch Up Over Coffee
 * **Purpose of the app:** <br/><br/>
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seamless transition, allowing the user to quickly and easily catch up on any new developments that occurred while they were sleeping, thus helping them to have a prepared and productive day!
-
+<br><br>
 * **Description:** <br/><br/>
     Home page: Displays daily affirmation and directory for all subpages including fitness, nutrition, news, horoscopes, weather, and stocks.
 
