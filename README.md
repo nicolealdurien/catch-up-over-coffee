@@ -2,7 +2,7 @@
 * **Purpose of the app:** 
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out      local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seemless transition into what information was updated while sleeping and helps the user have a prepared and productive day!
 
-* **Description** 
+* **Description:** 
 Home page: Displays daily affirmation and all pages including fitness, nutrition , news, horoscopes, weather, and stocks.
 
 News: The app utilizes the MediaStack API to present the user with general news headlines and allow them to search for news stories by category (e.g. business news), keyword (e.g. "covid"), or news source (e.g., CNN).The information that is displayed includes: title , description and source.
