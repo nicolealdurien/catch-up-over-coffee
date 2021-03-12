@@ -1,4 +1,8 @@
 # Catch Up Over Coffee
+
+* **Live link:**
+https://catch-up-over-coffee.surge.sh
+
 * **Purpose of the app:** <br/><br/>
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seamless transition, allowing the user to quickly and easily catch up on any new developments that occurred while they were sleeping, thus helping them to have a prepared and productive day!
 <br><br>
@@ -64,14 +68,11 @@ Then, install Surge using npm by running the following command: npm install --gl
 You may need to preface this command with sudo.
 Then, run surge from within any directory folder, to publish that directory onto the web.
 
-* **Live link:**
-https://catch-up-over-coffee.surge.sh
 
 * **Developers:**
-Nicole Aldurien, Summer Johnson,  Neil Shah, Mike Warren
+[Nicole Aldurien](https://github.com/nicolealdurien), [Summer Johnson](https://github.com/SJ-CODES), [Neil Shah](https://github.com/neilshah101), [Mike Warren](https://github.com/mikewarren02)
 
 
-![](https://github.com/nicolealdurien/catch-up-over-coffee/blob/main/images/screenshot.png?raw=true)
 
 ![](https://user-images.githubusercontent.com/71364408/110894150-5a4b8900-82c5-11eb-9e82-f0fdd932bab6.png)
 
