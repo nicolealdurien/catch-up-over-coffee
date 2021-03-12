@@ -79,3 +79,9 @@ Nicole Aldurien, Summer Johnson,  Neil Shah, Mike Warren
 
 
 ![](https://github.com/nicolealdurien/catch-up-over-coffee/blob/main/images/screenshot.png?raw=true)
+![](https://user-images.githubusercontent.com/71364408/110894150-5a4b8900-82c5-11eb-9e82-f0fdd932bab6.png)
+![](https://user-images.githubusercontent.com/71364408/110894165-60da0080-82c5-11eb-86a5-f0cd5357d133.png)
+![](https://user-images.githubusercontent.com/71364408/110894168-633c5a80-82c5-11eb-8002-75c4fa0996f2.png)
+![](https://user-images.githubusercontent.com/71364408/110894171-65061e00-82c5-11eb-8859-b99c150e625f.png)
+![](https://user-images.githubusercontent.com/71364408/110894177-66374b00-82c5-11eb-90ec-28a81e72a089.png)
+
