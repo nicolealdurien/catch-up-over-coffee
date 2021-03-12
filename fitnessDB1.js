@@ -69,7 +69,7 @@ let exercises = [
     id: 9,
     sanskrit_name: "Utkatasana",
     english_name: "Chair",
-    img_url: "iomages/chair.svg",
+    img_url: "images/chair.svg",
     description:
       "Lift your chest and draw your shoulders together to open the chest. Keep your knees and thighs parallel. Hinge first at the hips and keep the abdominals drawn up and in toward the spine. On each inhale, feel your chest expand and your spine lengthen.",
   }, 
