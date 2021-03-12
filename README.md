@@ -72,7 +72,7 @@ You may need to preface this command with sudo.
 Then, run surge from within any directory folder, to publish that directory onto the web.
 
 * **Live link:**
-https://catch-up-over-coffee.surge-sh
+https://catch-up-over-coffee.surge.sh
 
 * **Developers:**
 Nicole Aldurien, Summer Johnson,  Neil Shah, Mike Warren
