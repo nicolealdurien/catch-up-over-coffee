@@ -1,6 +1,6 @@
 # Catch Up Over Coffee
 * **Purpose of the app:** 
- This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seemless transition into what information was updated while sleeping and helps the user have a prepared and productive day!
+ This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out      local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seemless transition into what information was updated while sleeping and helps the user have a prepared and productive day!
 
 * **Description** 
 Home page: Displays daily affirmation and all pages including fitness, nutrition , news, horoscopes, weather, and stocks.
@@ -19,7 +19,7 @@ Fitness: The app utilizes Rebecca Estes yoga API found on github with supplement
 
 Nutrition: The app utilizes a created dictionary to present the nutiriton fact with a photo of the relevant fact topic. Their is a 'Test your Knowledge'section that is a mini quiz for user to take on a topic. They can take a few seconds to come up with an answer then click get answer to see how correct they were. The answer includes a detailed explanation of why it is correct to further enhance the users knowledge.
 
-* **Features:*
+* **Features:**
 Geolocaiton tracking
 Stock quote displaying in real time
 Daily affirmations more than 20 examples
