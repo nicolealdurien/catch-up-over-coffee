@@ -83,4 +83,3 @@ Then, run surge from within any directory folder, to publish that directory onto
 ![](https://user-images.githubusercontent.com/71364408/110894171-65061e00-82c5-11eb-8859-b99c150e625f.png)
 
 ![](https://user-images.githubusercontent.com/71364408/110894177-66374b00-82c5-11eb-90ec-28a81e72a089.png)
-
