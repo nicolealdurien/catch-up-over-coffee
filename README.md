@@ -4,12 +4,11 @@
 https://catch-up-over-coffee.surge.sh
 
 ![](https://user-images.githubusercontent.com/71364408/110894177-66374b00-82c5-11eb-90ec-28a81e72a089.png)
-<br /> <br />
+<br /> <br /><br />
 * **Purpose of the app:** <br/><br/>
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seamless transition, allowing the user to quickly and easily catch up on any new developments that occurred while they were sleeping, thus helping them to have a prepared and productive day!
 
-* **Features:** <br/><br/>
-
+* **Features:** 
     Home page: Displays a daily affirmation and the directory for all subpages including news, weather, stocks, fitness, nutrition, and horoscopes.
     
     Affirmations: The app utilizes a custom JSON document created by our project developers to present the affirmations on the home screen. An interval timer is used to periodically display a new affirmation on the screen.
@@ -51,16 +50,6 @@ https://catch-up-over-coffee.surge.sh
 
 * **Languages/Tools Used:**
 Javascript, HTML/CSS, Surge, Github, VSCode, multiple APIs
-
-* **Challenges/Solutions:**
-Chrome browser requires HTTPS for geolocation to work for weather, while MediaStack's free API access disallows use of HTTPS.
-- Solution: All links within our project were changed to full-path links - HTTPS for everything but the news page, and HTTP for the news page.
-Accessing API keys that gives limited access on how many hits the website can have.
----Solution: Members created their own API keys to avoid monthly call limit.
-Not finding a suitable API key for 2 of our areas.
----Solution: Created our own JSON document and populated with information to use in webpage.
-Being able to make site mobile friendly and features of application viewable on all devices.
----Solution: adjusted padding to display evenly, saved images locally so they can be seen on mobile devices, and used media queries to make the site mobile-friendly.
 
 
 * **Developers:**
