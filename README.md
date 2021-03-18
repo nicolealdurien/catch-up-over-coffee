@@ -11,32 +11,32 @@ https://catch-up-over-coffee.surge.sh
 * **Features:** <br/><br/>
 
     Home page: Displays a daily affirmation and the directory for all subpages including news, weather, stocks, fitness, nutrition, and horoscopes.
-    <br>
+    
     Affirmations: The app utilizes a custom JSON document created by our project developers to present the affirmations on the home screen. An interval timer is used to periodically display a new affirmation on the screen.
-<br>
+
     News: Consumes [MediaStack API](https://mediastack.com/documentation/).
     On initial page load, user is presented with general news stories from around the world. Each story includes title, URL, news source, and story description.<br/>
     Additional news search options include:<br/>
     - Search by category (e.g. business news)<br/>
     - Search by keyword (e.g. "covid")<br/>
     - Search by news source (e.g., BBC)<br/>
-<br>
+
     Weather: Consumes [OpenWeatherMap API](https://openweathermap.org/current).
     On initial page load, user is presented with current local weather based on geolocation. Weather displayed includes current temperature, low/high temps for the day, current humidity, and current "feels like" temperature after accounting for heat index/wind chill.<br/>
     Additional search options/available information:
     - Weather search by ZIP or by city/state, for those who do not have location services enabled
     - Links to the National Weather Service radar map
-<br>
+
     Stocks: Consumes [Finnhub API](https://finnhub.io/docs/api).<br>
     On initial page load, user is presented with a banner of pre-set stock quotes from well-known companies.
     Additional search options/available information:
     - Search by stock ticker symbol for custom quote
     - Search by company name to get stock ticker symbol
     - After custom quote is displayed, user can click a button to see the company's logo, industry, and website.
-<br>
+
     Horoscopes: Consumes [Aztro API](https://aztro.readthedocs.io/en/latest/).<br>
     Users select their sign and can choose whether to see that sign's horoscope for today, yesterday, or tomorrow. The displayed information includes the horoscope, mood for the day, lucky color, lucky time of day, and lucky number.
-<br>
+
     Fitness: The app utilizes a custom JSON document that sources its names and images from Rebecca Estes' [Yoga API](https://github.com/rebeccaestes/yoga_api), with pose descriptions and general yoga facts added by our project developers.  
     On initial page load, the user is presented with a random yoga fact which periodically changes according to an interval timer, as well as a yoga pose. The display for each yoga pose includes its English name, Sanskrit name, image, and description. A "Get New Pose" button is available for the user to request a new randomly-selected pose.
 
