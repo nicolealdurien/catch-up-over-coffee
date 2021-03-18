@@ -9,6 +9,7 @@ https://catch-up-over-coffee.surge.sh
  This app was created to be a one-stop website for a busy individual to start their day. A user can catch up on news, see active stock market prices, check out local weather, and view their horoscope while enjoying a great cup of coffee. They are able to view daily affirmations, suggested yoga exercises, nutrition tips, and nutrition quiz questions. The app encourages a seamless transition, allowing the user to quickly and easily catch up on any new developments that occurred while they were sleeping, thus helping them to have a prepared and productive day!
 
 * **Features:** 
+
     Home page: Displays a daily affirmation and the directory for all subpages including news, weather, stocks, fitness, nutrition, and horoscopes.
     
     Affirmations: The app utilizes a custom JSON document created by our project developers to present the affirmations on the home screen. An interval timer is used to periodically display a new affirmation on the screen.
