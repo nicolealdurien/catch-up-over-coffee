@@ -389,35 +389,34 @@ let exercises = [
 let yogaFacts = [
   {
     fact:
-      "By rule, after every 30 minutes of yoga asana practice, you must allocate 5 minutes of rest for your body.",
+      "36 million people in the US regularly practice yoga.",
   },
   {
     fact:
-      "Recent studies have proven that Yoga is an effective tool for combating back pain! The studies were conducted in the western world but the Indians already knew about it thousands of years ago.",
+      "The number of Americans practicing yoga has grown by over 50% since 2015.",
   },
   {
     fact:
-      "Men who practice Yoga are called Yogis. Women who practice Yoga are called Yoginis.",
+      "The word ‘yoga’ comes from the Sanskrit language and means ‘union’.",
   },
   {
     fact:
-      "Yoga involves slow rhythmic breathing. The reason for this is that the ancient yogis used to think that we humans have a limited number of breaths in our lives, and that slow and deep breaths can help us extend our life.",
+      "A Norwegian medical study in 2013 found that practitioners of yoga showed higher levels of certain molecular changes that encourage the circulation of immune cells."},
+  {
+    fact:
+      "Yoga is one of the oldest physical disciplines in the world.",
   },
   {
     fact:
-      "Yoga is considered as one of the world’s oldest physical disciplines.",
+      "Research funded by the Alzheimer’s Research and Prevention Foundation in 2016 found that yoga combined with meditation could delay cognitive impairment.",
   },
   {
     fact:
-      "‘Yuj’ – the Vedic Sanskrit root word is the source of the word ‘yoga’. Yuj means ‘to unite’ or ‘to join.",
+      "Hot yoga, originally known as Bikram yoga, is held in a room that can reach temperatures of 105 Fahrenheit.",
   },
   {
     fact:
-      " Rhythmic breathing in Yoga elevates mood.",
-  },
-  {
-    fact:
-      "In Malaysia, Yoga has been banned among Muslims. It is believed to be against the core philosophy of Islam.",
+      "In Malaysia, yoga has been banned among Muslims. It is believed to be against the core philosophy of Islam.",
   },
   {
     fact:
@@ -425,15 +424,15 @@ let yogaFacts = [
   },
   {
     fact:
-      "The age group of the most active Yoga practitioners in the USA is 30-49 years. This group also makes up 43% of all Yoga practitioners in the country.",
+      "The age group of the most active Yoga practitioners in the USA is 30-49 years. This group also makes up 43% of all yoga practitioners in the country.",
   },
   {
     fact:
-      "People practicing Yoga have been shown to have a longer lifespan compared to those who do not practice. Deep and slow breathing helps to expand the lungs and aid the heart.",
+      "Yoga has 84 basic Asanas or poses.",
   },
   {
     fact:
-      "Yoga helps in retaining the vitality in your body along with keeping it fit. It motivates you towards healthy eating and improves the metabolic system of the body.",
+      "Some museums now run yoga classes in their galleries. Museu Nacional d’Art de Catalunya in Barcelona was one of the first museums to open their doors to yogis, with an eye toward reestablishing museums as a place for reflection, not simply tourist attractions.",
   },
   {
     fact:
@@ -445,23 +444,23 @@ let yogaFacts = [
   },
   {
     fact:
-      "Practicing yoga would help you explore a different side of yourself. It would make you feel good about yourself and helps you take a positive approach in life.",
+      "India is the birthplace of yoga.",
   },
   {
     fact:
-      "Yoga helps in reducing stress and creates a routine which in turn makes a regular sleeping pattern. A relaxed body gets a deeper and more peaceful sleep.",
+      "Competitive Yoga became an official sport after its inclusion in the 2016 Summer Olympics.",
   },
   {
     fact:
-      "A lot of breathing exercises are said to improve lung function. Doing such exercises in a long run could cure respiratory problems. It also increases the capacity of your lungs.",
+      "The world in total has over 300 million Yoga practitioners.",
   },
   {
     fact:
-      "Increased flexibility and strength can help prevent the causes of some types of back pain. Many people who have back pain spend a lot of time sitting at a computer or driving a car, which causes tightness throughout the body and spinal compression. Yoga counteracts these conditions.",
+      "The largest yoga class at a single venue was with 35,000 people at the New Delhi Global Yoga Day on June 21st, 2015.",
   },
   {
     fact:
-      "Yoga improves blood circulation. By transporting nutrients and oxygen throughout your body, yoga practice provides healthier organs, skin, and brain.",
+      "Yoga hand positions are called mudras.",
   },
 ];
 
