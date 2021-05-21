@@ -40,7 +40,7 @@ a:hover {
 
 .header {
     /* Photo by Patryk Gauza on unsplash.com */
-    background: url('images/beans.jpg') center;
+    background: url('../images/beans.jpg') center;
     background-size: cover;
     padding: 4rem 2rem;
     /* grid styles */
