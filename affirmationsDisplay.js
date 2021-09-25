@@ -1,30 +1,21 @@
+const affirmationsDisplay = document.getElementById("affirmationsDisplayUL")
 
-
-
-
-let affirmationsDisplay = document.getElementById("affirmationsDisplayUL")
-
-
-function displayAffirmations() {
+const displayAffirmation = () => {    
+    const affirmations = affirmationsList[Math.floor(Math.random() * affirmationsList.length)]
     
-        let affirmations = affirmationsList[Math.floor(Math.random() * affirmationsList.length)]
-        
-        let affirmationsItem= `
-                                <h2 id="affirmationsItems">
-                                <b>-Affirmation-</b>
-                                <br>
-                                <i>${affirmations.affirmation}</i> 
-                                </h2>
-                                `
-        affirmationsDisplay.innerHTML = affirmationsItem
+    const affirmationsItem = `
+                            <h2 id="affirmationsItems">
+                            <strong>-Affirmation-</strong><br />
+                            <em>${affirmations.affirmation}</em> 
+                            </h2>
+                            `
+    affirmationsDisplay.innerHTML = affirmationsItem
 }
 
-displayAffirmations()
+displayAffirmation()
 
-function refreshAffirmationsDisplay() {
-    let intervalid = window.setInterval(function() {
-        displayAffirmations()
-    }, 120000)
+const refreshAffirmationDisplay = () => {
+    window.setInterval(function() { displayAffirmation() }, 12000)
 }
 
-refreshAffirmationsDisplay()
+refreshAffirmationDisplay()
