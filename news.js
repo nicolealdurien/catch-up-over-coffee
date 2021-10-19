@@ -136,3 +136,5 @@ btnSearchCategory.addEventListener("click", function() {
     })
   }) 
 
+  
+module.exports = nullCheck
