@@ -1,10 +1,9 @@
 //Credit to Rebecca Estes - we started with her Yoga API and added  pose descriptions: https://github.com/rebeccaestes/yoga_api
 
-// const newPoseBtn = document.getElementById("newPoseBtn");
 const photoDIV = document.getElementById("photoDIV");
 const yogaFactHeader = document.getElementById("yogaFactHeader");
 
-function getNewPose() {
+const getNewPose = () => {
   let exercise = exercises[Math.floor(Math.random() * exercises.length)];
 
   const exerciseItem = ` 
@@ -21,7 +20,7 @@ function getNewPose() {
 
 getNewPose();
 
-function getNewFact() {
+const getNewFact = () => {
   yogaFactHeader.innerHTML = "";
   let yogaFact = yogaFacts[Math.floor(Math.random() * yogaFacts.length)];
   yogaFactHeader.innerHTML = yogaFact.fact;
@@ -29,7 +28,6 @@ function getNewFact() {
 
 getNewFact();
 
-
 let intervalId = window.setInterval(() => {
   getNewFact();
-}, 25000);
+}, 15000);

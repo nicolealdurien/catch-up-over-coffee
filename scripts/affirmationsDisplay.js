@@ -159,7 +159,7 @@ const displayAffirmation = () => {
 displayAffirmation()
 
 const refreshAffirmationDisplay = () => {
-    window.setInterval(function() { displayAffirmation() }, 12000)
+    window.setInterval(function() { displayAffirmation() }, 15000)
 }
 
 refreshAffirmationDisplay()
