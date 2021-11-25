@@ -4,9 +4,12 @@
 
 /* Generic styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-   
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,10 +18,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a {
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 a {
@@ -49,7 +48,7 @@ a:hover {
     align-items: center;
 }
 
-.header>* {
+.header > * {
     color: white;
 }
 
@@ -71,14 +70,9 @@ a:hover {
 }
 
 
-/* cards styles for front page */
+/* card styles for front page */
 
-.cards {
-    /* padding: .5rem; */
-    
-}
-
-.cards>ul {
+.cards > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
     grid-gap: 1rem;
@@ -86,13 +80,13 @@ a:hover {
     padding-inline-start: 109px; 
 }
 
-.cards>ul>li {
+.cards > ul > li {
     border: 1px solid #E2E2E2;
     border-radius: .5rem;
     
 }
 
-.cards>ul>li>figure {
+.cards > ul > li > figure {
     max-height: 220px;
     overflow: hidden;
     border-top-left-radius: .5rem;
@@ -100,31 +94,31 @@ a:hover {
     position: relative;
 }
 
-.cards>ul>li>figure>img {
+.cards > ul > li > figure > img {
     width: 100%;
 }
 
-.cards>ul>li>figure>figcaption {
+.cards > ul > li > figure > figcaption {
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
 }
 
-.cards>ul>li>figure>figcaption>h3 {
+.cards > ul > li > figure > figcaption > h3 {
     color: white;
     padding: .75rem;
     font-size: 1.25rem;
 }
 
-.cards>ul>li>p {
+.cards > ul > li > p {
     font-size: 1rem;
     line-height: 1.5;
     padding: 1rem .75rem;
     color: #666666;
 }
 
-.cards>ul>li>a {
+.cards > ul > li > a {
     padding: .5rem 1rem;
     margin: .5rem;
 }
@@ -161,16 +155,6 @@ footer {
 
 /* Styling for News Page */
 
-.news-link:link {
-    background-color: white;
-    color: blue;
-}
-
-.news-link:visited {
-    background-color: white;
-    color: purple;
-}
-
 .button {
     background-color: goldenrod;
     text-decoration: none;
@@ -192,31 +176,46 @@ li {
     text-align: center;
 }
 
+.news-link:link {
+    background-color: white;
+    color: blue;
+}
+
+.news-link:visited {
+    background-color: white;
+    color: purple;
+}
+
+.search-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(255, 237, 214);
+    box-shadow: 1px 1px 2px 1px black
+  }
+  
+  .news-subheader-photo {
+      border-radius: 15%;
+      height: 200px;
+      width: 250px;
+  }
+  
+  #news-subheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #allNewsUL > li {
+    text-align: left;
+  }
 
 
 /* Styling for Weather Page */
 
-
-.weather-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin-left: auto;
-    margin-right: auto 
-}
-
-
-.weather-column {
-    flex: 1 1 0px;   
-    text-align: center; 
-    line-height: 1.6;
-
-}
-
 #displayWeatherUL {
     font-size: 1.5rem;
-    
 }
 
 #weatherTitle {
@@ -234,13 +233,51 @@ li {
     padding-left: 60px;
 }
 
+.weather-column {
+    flex: 1 1 0px;   
+    text-align: center; 
+    line-height: 1.6;
+}
+
 .weather-image {
     width: 200px;
     height: 200px;
     padding: .3rem;
 }
 
+.weather-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
 /* Styling for Horoscope Page */
+
+#horoscopeForToday {
+    text-align: center ;
+}
+
+#showHoroscope {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.horoscope-search-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(255, 237, 214);
+    box-shadow: 1px 1px 2px 1px black
+}
+
 .zodiac-or-weather-banner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -255,31 +292,15 @@ li {
     padding: .3rem;
 }
 
-.horoscope-search-container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(255, 237, 214);
-    box-shadow: 1px 1px 2px 1px black
-}
-
-#showHoroscope {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-#horoscopeForToday {
-    text-align: center ;
-}
 
 /* Styling for Nutrition Page */
 
 #nutritionFactsUL {
     font-size: 1.25rem;
+}
+
+#nutritionQuestionItems {
+    font-size: 1.75rem;
 }
 
 .nutritionImg {
@@ -289,18 +310,16 @@ li {
     margin-right: auto;
 }
 
-#nutritionQuestionItems {
-    font-size: 1.75rem;
-}
-
 
 /* Styling for Affirmations Section */
+
 #affirmationsDisplayUL{
     text-align: center;
     color:goldenrod;
     font-style: italic;
     padding: 15px;
 }
+
 
 /* Styling for Fitness Section */
 
@@ -312,39 +331,196 @@ li {
     width: 50%;
 }
 
+#photoDIV {
+    display: grid;
+    justify-content: center;
+    position: relative;
+}
+
+#yogaFactHeader {
+    text-align: center;
+    font-size: inherit;
+    color: goldenrod;
+    background-blend-mode: overlay;
+}  
+  
+.body {
+    color: black;
+    font-size: 1.25rem;
+}
+  
+.newPoseBtn {
+    background-color: goldenrod;
+    border-color: transparent;
+    border-radius: 0.25rem;
+    color: white;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+
+/* Styling for Stock Section */
+
+#displaycompanydetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stocksdisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-items: space-evenly;
+}
+
+.bannerquotesbox {
+    font-size: 20px;
+    letter-spacing: 1px;
+    height: auto;
+    width: auto;
+    color: white;
+    background: black;
+    margin: 22px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 2px 1px black
+}
+
+.bannerquotesboxcompanysymbol {
+    font-size: 40px;
+    letter-spacing: 2px;
+    height: 45px;
+    width: 300px;
+    color: white;
+    background: #a520da;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 2px 1px black
+}
+
+.companydetailsbox {
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 290px;
+    height: 160px;
+    color: white;
+    background: black;
+    margin-left: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 1px black
+}
+
+.companyDetailsButton {
+    background-color: #a520da;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+.headerstockdisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    background: black;
+}
+
+.quotesbox {
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 290px;
+    height: 255px;
+    color: white;
+    background: black;
+    margin-left: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 1px black
+}
+
+.symbolbox {
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 290px;
+    height: 40px;
+    color: white;
+    background: black;
+    margin-left: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 2px 1px black
+}
+
+.stockbutton {
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    margin: .5rem;
+}
+
+.stocks-link:link {
+    background-color: black;
+    color: blue;
+}
+
+.stocks-link:visited {
+    background-color: black;
+    color: purple;
+}
+
+
 /* Styling for Mobile Devices */
 
 @media screen and (max-width: 375px) {
-    .cards>ul {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
-        padding: 25px;
-
     #horoscope-page-title {
         font-size: 3.5rem; 
     }
     
-    .cards>ul>li>p {
+    .cards > ul {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+        padding: 25px;
+    }
+
+    .cards > ul > li > p {
         font-size: 1rem;
         line-height: 1.5;
         padding: 1rem .75rem;
         color: #666666;
     }
+
     .content-wrapper {
         padding: 10px
     }
-
 }
 
-/* Styling for Larger Screens*/
+/* Styling for Larger Screens */
+
 @media screen and (min-width: 376px) {
-    .cards>ul {
+    .cards {
+        padding: .5rem;
+    }
+
+    .cards > ul {
         padding-inline-start: 109px;
     }
 
     .content-wrapper {
         padding: 20px
     }
-
-    .cards {
-        padding: .5rem;
-    }
+}

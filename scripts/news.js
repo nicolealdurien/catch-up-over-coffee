@@ -5,7 +5,7 @@ const btnSearchCategory = document.getElementById("btnSearchCategory")
 
 // Retrieve basic news object on page load and passes it to de-duplicator.
 function getNews() {
-fetch('http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&languages=en')
+fetch('http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&countries=us,gb,in,au,ie,nz&language=en')
     .then(response => {
         return response.json()      
     }).then(result => {
@@ -18,7 +18,7 @@ fetch('http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548
 getNews()
 
 
-// Removes duplicate stories from response object then passes to display function
+// Removes duplicate stories from response object, then passes to display function
 function removeDupes(stories) {
     let deDupedTitles = []
     let deDupedStories = []
@@ -56,7 +56,7 @@ function displayNews(stories) {
 }
 
 
-// If entry in JSON is null for a certain field (say, "Author: null"), this removes the data from being displayed.
+// If entry in JSON is null for a certain field (say, "Author: null"), this prevents the data from being displayed.
 function nullCheck (label) {
     if (label == null) {
         return label = ""
@@ -67,7 +67,7 @@ function nullCheck (label) {
 }
 
 
-// If description just reiterates the title exactly, this prevents the description from showing.
+// If description just reiterates the title exactly, this prevents the description from being displayed.
 function equalityCheck(title, description) {
     strTitle = String(title)
     strDescription = String(description)
@@ -85,7 +85,7 @@ function equalityCheck(title, description) {
 btnSearchSource.addEventListener("click", function() {
     const searchSourceTextBox = document.getElementById("searchSourceTextBox")
     const searchSource = searchSourceTextBox.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&languages=en&sources=${searchSource}`)
+    fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&countries=us,gb,au,ie,nz&language=en&sources=${searchSource}`)
     .then(response => {
         return response.json()
     }).then(result => {
@@ -98,7 +98,7 @@ btnSearchSource.addEventListener("click", function() {
 btnSearchKeyword.addEventListener("click", function() {
     const searchKeywordTextBox = document.getElementById("searchKeywordTextBox")
     const searchKeyword = searchKeywordTextBox.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&languages=en&keywords=${searchKeyword}`)
+    fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&countries=us,gb,au,ie,nz&language=en&keywords=${searchKeyword}`)
     .then(response => {
         return response.json()
     }).then(result => {
@@ -115,7 +115,7 @@ const dropdownSelectCategory = document.getElementById("dropdownSelectCategory")
 dropdownSelectCategory.addEventListener("change", function () {
   let chosenCategory = dropdownSelectCategory.options[dropdownSelectCategory.selectedIndex]
   let passCategoryToFetch = chosenCategory.value
-  fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&languages=en&categories=${passCategoryToFetch}`)
+  fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&countries=us,gb,au,ie,nz&language=en&categories=${passCategoryToFetch}`)
   .then(response => {
       return response.json()
   }).then(result => {
@@ -128,7 +128,7 @@ dropdownSelectCategory.addEventListener("change", function () {
 btnSearchCategory.addEventListener("click", function() {
     let chosenCategory = dropdownSelectCategory.options[dropdownSelectCategory.selectedIndex]
     let passCategoryToFetch = chosenCategory.value
-    fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&languages=en&categories=${passCategoryToFetch}`)
+    fetch(`http://api.mediastack.com/v1/news?access_key=f29a2265301f2134afcc67c2b548beca&countries=us,gb,au,ie,nz&language=en&categories=${passCategoryToFetch}`)
     .then(response => {
         return response.json()
     }).then(result => {
@@ -136,3 +136,5 @@ btnSearchCategory.addEventListener("click", function() {
     })
   }) 
 
+  
+module.exports = nullCheck

@@ -135,7 +135,7 @@ let exercises = [
     id: 19,
     sanskrit_name: "Pincha Mayurasana",
     english_name: "Forearm Stand",
-    img_url: "iamges/forearmstand.svg",
+    img_url: "images/forearmstand.svg",
     description:
       "Push down strongly through your elbows and forearms, gently draw your low ribs in, and lengthen your tailbone toward your heels. Stay here for up to five breaths, then slowly release your legs to the ground, one at a time. Rest in Child's pose, and repeat the pose, leading with the opposite leg whenever you feel ready.",
   },
@@ -148,14 +148,14 @@ let exercises = [
     description:
       "From a standing position, the body is folded over at the crease of the hip with the spine long.  The neck is relaxed and the crown of the head is towards the earth.  The feet are rooted into the earth with the toes actively lifted.  The spine is straight.  The ribcage is lifted.  The chest and the thighs are connected.  The sacrum lifts up toward the sky in dog tilt.  The fingertips are resting on the earth next to the toes.  The gaze is down or slightly forward.",
   },
-  // {
-  //   id: 21,
-  //   sanskrit_name: "Ardha Chandrasana",
-  //   english_name: "Half-Moon",
-  //   img_url: "https://www.dropbox.com/s/gpumf9eehr8wo9g/halfmoon.svg?raw=1",
-  //   description:
-  //     "From a standing position one leg is straight while the other is extended back parallel to the earth (or a little above parallel) and one hand is on the earth (beyond the little-toe side of the foot, about 12 inches) while the other hand is extended up towards the sky.  The shoulder blades are squeezed together and the fingers move outward in opposing directions.  The weight of the body is supported mostly by the standing leg while the bottom hand has very little weight on it but is used intelligently to regulate balance.  The upper torso is rotated open to the sky.  Both hips are externally rotated.  Energy is extended actively through the flexed toes to keep the raised leg strong.  The inner ankle of the standing foot is lifted strongly upward, as if drawing energy from the earth.  The sacrum and scapulae are firmly pressed against the back torso and lengthen the coccyx toward the raised foot.  The gaze is either up or down, depending on the condition of the neck.  If injured the gaze is down.",
-  // },
+  {
+    id: 21,
+    sanskrit_name: "Ardha Chandrasana",
+    english_name: "Half-Moon",
+    img_url: "images/halfmoon.svg",
+    description:
+      "From a standing position, one leg is straight while the other is extended back parallel to the earth (or a little above parallel) and one hand is on the earth (beyond the little-toe side of the foot, about 12 inches) while the other hand is extended up towards the sky.  The shoulder blades are squeezed together and the fingers move outward in opposing directions.  The weight of the body is supported mostly by the standing leg while the bottom hand has very little weight on it but is used intelligently to regulate balance.  The upper torso is rotated open to the sky.  Both hips are externally rotated.  Energy is extended actively through the flexed toes to keep the raised leg strong.  The inner ankle of the standing foot is lifted strongly upward, as if drawing energy from the earth.  The sacrum and scapulae are firmly pressed against the back torso and lengthen the coccyx toward the raised foot.  The gaze is either up or down, depending on the condition of the neck.  If injured the gaze is down.",
+  },
   // {
   //   id: 22,
   //   sanskrit_name: "Adho Mukha Vrksasana",

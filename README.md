@@ -42,12 +42,17 @@ https://catch-up-over-coffee.surge.sh
 
     Nutrition: The app utilizes a custom JSON document created by our developers to present the user with nutrition facts and quiz questions. On page load, the user is presented with a random nutrition fact and a quiz question. The user can click a button to see a detailed answer to the question. The answer's display includes another button to get a new question.
 
+* **Screenshot of weather page:** 
 ![](https://user-images.githubusercontent.com/71364408/110894171-65061e00-82c5-11eb-8859-b99c150e625f.png)
 
+* **Screenshot of stocks page:** 
 ![](https://user-images.githubusercontent.com/71364408/110894168-633c5a80-82c5-11eb-8002-75c4fa0996f2.png)
 
+* **Screenshot of fitness page:** 
 ![](https://user-images.githubusercontent.com/71364408/110894165-60da0080-82c5-11eb-86a5-f0cd5357d133.png)
 
+* **Code snippet for news page data cleanup before display:** 
+![](https://github.com/nicolealdurien/catch-up-over-coffee/blob/main/images/codesnippet.png?raw=true)
 
 * **Languages/Tools Used:**
 Javascript, HTML/CSS, Surge, Github, VSCode, multiple APIs
